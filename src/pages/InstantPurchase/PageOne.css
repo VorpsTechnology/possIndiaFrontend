@@ -1,0 +1,502 @@
+.flex-item-left {
+    justify-content: left;
+}
+.flexi-left img{
+    display: block;
+ }
+
+.flex-contianer {
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+
+.stateflex{
+   display:flex;margin:20px;
+}
+.flex-item-right {
+    justify-content: right;
+  
+}
+
+.card200 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 439px;
+    height: 400px;
+  
+    left: 876px;
+  
+    background: #F4F7EE;
+    border: 3px solid #F4F7EE;
+    border-radius: 25px;
+}
+
+.fromcontainerm{
+    display:flex;margin:20px;
+}
+
+#cardid {
+    position: absolute;
+    width: 150px;
+    height: 149px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding-top: 10px;
+}
+.nameinput{
+    width:250px;
+}
+
+#pro {
+    background: #FFFFFF;
+    border-radius: 7px;
+    width: 100px;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+#purdisplay{
+    display:flex;justify-content:space-between;padding-left:40px;padding:20px 20px 20px 20px;
+}
+.nameinput2 {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.8793px solid #EAEAEA;
+    border-radius: 5.63791px;
+    padding: 7px;
+    width:230px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+}
+
+.logininputarea {
+    background-color: rgba(255, 255, 255, 1);
+    width: 300px;
+    padding: 7px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+    margin-top: 3px;
+}
+
+.logininputarea{
+    width:520px
+}
+.Mobileinputarea {
+    background-color: rgba(255, 255, 255, 1);
+
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+    padding: 7px;
+    margin-top: 3px;
+    width:520px;
+}
+
+.card300 {
+    position: absolute;
+    width: 298px;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    left: 934px;
+    background: #F4F4F4;
+    border-radius: 7px;
+}
+
+.flexi-right img{
+    display: block;
+ }
+.nextbtn {
+    background-color: #F3CA6D;
+    border-color: transparent;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.anime {
+    float: right;
+    transform: translateY(-150px);
+}
+
+.animeleg {
+    float: left;
+   
+}
+
+.tup {
+    float: right;
+ bottom:0
+}
+
+.per {
+    float: right;
+    transform: translateY(-200px);
+    display: block;
+   
+}
+
+#mobile{
+    display: none;
+}
+
+.flex-contianer{
+    justify-content:space-between;margin:40px; 
+}
+
+.flex-item-left{
+    justify-content: left;
+}
+
+.forml{
+  margin-left:20px;
+}
+
+.flexi{
+    display:flex;justify-content:space-between;
+}
+
+   .mobidiv{
+    margin: 20px;
+   }
+
+
+.flex-item-right{
+    padding-right:10x;margin-top:40px;
+}
+.foml{
+    margin-left: 20px;
+}
+
+.imghim{
+    display: none;
+}
+
+.mediay{
+    display: none;
+}
+.footj{
+    display: none;
+}
+
+.poi{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.Mobiinput{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.8793px solid #EAEAEA;
+    border-radius: 5.63791px;
+    padding: 7px;
+width:500px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);   
+}
+#leftslide{
+    display: block;
+    height:'0px'
+}
+.mediacarf{
+    display: none;
+}
+
+.mobileseen{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+
+.flexi{
+    display: none;
+}
+
+.mobileseen{
+    display: block;
+}
+.mediacarf{
+    display: block;
+}
+
+#leftslide{
+    display: none;
+    height:0px
+}
+#cardfor{
+  width: auto;
+    padding: 40px;
+    background: #F4F7EE;
+    border: 3px solid #F4F7EE;
+    border-radius: 25px;
+    justify-content: center;
+    margin:20px 20px 20px 20px;
+}
+
+#carf{
+  width:200px;
+  height:100px;
+  margin-top: 20px;
+}
+
+.poi{
+    display:inline;
+    justify-content: center;
+}
+.mediay{
+    display: block;
+
+}
+
+.footj{
+    display: block;
+}
+.footj img{
+    justify-content: left;
+}
+.mediay img{
+    display: block;
+    transform: translateY(-100px);
+}
+.fname4{
+   
+    font-weight: 600;
+}
+.fname5{
+    margin-right: 170px;
+    font-weight: 600; 
+}
+.imghim {
+    display: block;
+    justify-content: right;
+
+}
+
+.header1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.imghim img{
+    justify-content: right;
+    transform: translateY(-100px);
+}
+
+.fname6{
+    margin-right: 240px;
+    font-weight: 600;   
+}
+
+.fname7{
+    margin-right: 240px;
+    font-weight: 600;    
+}
+
+.fname8{
+    margin-right: 250px;
+    font-weight: 600;   
+}
+
+.foml{
+   text-align: center;
+   margin-top: 20px
+}
+
+.fname9{
+    margin-right: 40px;
+    font-weight: 600;    
+}
+
+.foml{
+    margin-left: 0px;
+}
+
+.stateflex{
+    display:inline;margin:0px;
+ }
+
+.nameinput2 {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.8793px solid #EAEAEA;
+    border-radius: 5.63791px;
+    padding: 7px;
+width:300px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+}
+
+.Mobiinput{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1.8793px solid #EAEAEA;
+    border-radius: 5.63791px;
+    padding: 7px;
+width:300px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);   
+}
+.flex-contianer{
+    justify-content:center;
+    display: inline;
+    margin: 20px;
+}
+
+.flex-item-left{
+    justify-content: center;
+  
+
+}
+
+.fli{
+    justify-content: center;
+    text-align: center;
+}
+#cardid {
+ 
+    width: 140px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.imgpro img{
+width:auto;
+display: block;
+}
+
+.flex-item-right{
+  
+    justify-content: center;
+    text-align: center;
+}
+
+.nameinput{
+    width:150px;outline-color:transparent;
+   }
+
+.fromcontainerm{
+    display:inline;
+    justify-content: center;
+
+    
+}
+
+.Mobileinputarea {
+    background-color: rgba(255, 255, 255, 1);
+    
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+    padding: 7px;
+    margin-top: 3px;
+    text-align: center;
+   
+}
+.logininputarea{
+    width:300px
+}
+
+
+.stateflex{
+    display:flex;margin:20px;
+    justify-content: center;
+ }
+ .flexi-right img{
+    display: none;
+ }
+ .flexi-left img{
+    display: none;
+ }
+ .per {
+   
+    display: none;
+   
+}
+
+#purdisplay{
+    display:none;justify-content:space-between;padding-left:0px;padding:20px 20px 20px 20px;height: 0px;
+}
+.imgpro img{
+    width:200px
+    }
+
+    #mobile{
+        display: block;
+      
+    }
+
+    .card20 {
+        background-color: transparent;
+        border-color: transparent;
+        box-sizing: border-box;
+        font-size: 15px;
+        width: 170px;
+        height: 50px;
+        
+        background: #F4F7EE;
+        border: 3px solid #F4F7EE;
+        border-radius: 20px;
+       
+    }
+    .mobidiv{
+       text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 320px){
+    .mobileseen {
+        display: block;
+    }
+    #cardfor{
+        margin:20px 20px 20px 20px;
+        width:auto;
+        padding: 40px;
+        background: #F4F7EE;
+        border: 3px solid #F4F7EE;
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .nameinput2 {
+        background-color: rgba(255, 255, 255, 1);
+        border: 1.8793px solid #EAEAEA;
+        border-radius: 5.63791px;
+        padding: 7px;
+    width:250px;
+        border-color: transparent;
+        border-radius: 5px;
+        outline-color: #F2C879;
+        box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+    }
+    .Mobiinput{
+        background-color: rgba(255, 255, 255, 1);
+        border: 1.8793px solid #EAEAEA;
+        border-radius: 5.63791px;
+        padding: 7px;
+    width:250px;
+        border-color: transparent;
+        border-radius: 5px;
+        outline-color: #F2C879;
+        box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);   
+    }
+    #cardfor img{
+       height:200px;
+       width: 200px;
+    }
+}
+

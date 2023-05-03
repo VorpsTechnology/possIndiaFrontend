@@ -1,0 +1,84 @@
+.Reviewheader h4 {
+    color: rgba(56, 43, 40, 1);
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card0 {
+    background-color: white;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+.caracards{
+    padding-top:40px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#fmki{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Reviewheader h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .Reviewheader  h2{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    #fmki{
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    
+    .card0 {
+        background-color: white;
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+    
+    }
+
+    .caracards{
+        padding-top:30px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+
+    .contenth4{
+        font-size: 15px;
+    }
+   
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+    .card0 {
+        background-color: white;
+        height: 330px;
+        width: 230px;
+        border-radius: 10px;
+        
+    
+    }
+}

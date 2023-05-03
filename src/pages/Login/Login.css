@@ -1,0 +1,103 @@
+.loginheader h4{
+    color:'rgba(0, 0, 0, 1)';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.logininputarea{
+    background-color: rgba(255, 255, 255, 1);
+    width: 150px;
+    border-color:transparent;
+    border-radius: 10px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgba(230, 235, 229, 1);
+}
+
+
+
+.Accountbtn{
+    background-color: #F2C879;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bolder;
+    color:'black';
+    border-radius: 20px;
+    padding: 10px;
+    width:180px;
+    margin-top:40px;
+    margin-bottom: 40px;
+
+}
+
+#signimage{
+ 
+        float: left;
+        position: absolute;
+       
+     
+
+}
+
+#firstrow{
+   padding: 0px 10px 0px 150px; 
+}
+.flyingjaat{
+    float: left;
+    position: absolute;
+    transform: translateY(-70px); 
+   
+
+}
+.passm{
+    font-size:17px;font-weight:500;color:rgba(0, 0, 0, 1);
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+    margin-right: 210px;
+      }
+     .emailm{
+        margin: 10px 10px 10px 10px;
+        justify-content: center;
+        text-align: left;
+        margin-right: 240px;
+        font-size:17px;font-weight:500;color:rgba(0, 0, 0, 1);
+    }
+@media only screen and (max-width: 600px) {
+    .flyingjaat{
+   display: none;
+       
+    
+    }
+    #col6{
+        width:100%
+    }
+    
+    .emailm{
+        margin: 10px 10px 10px 10px;
+        justify-content: center;
+        text-align: left;
+        margin-right: 240px;
+        font-size:17px;font-weight:500;color:rgba(0, 0, 0, 1);
+    }
+  
+  
+    #upperrow{
+        margin-top:20px;
+        padding: 0px 10px 0px 10px;
+        display: inline;
+       }
+       .passm{
+     font-size:17px;font-weight:500;color:rgba(0, 0, 0, 1);
+     margin: 20px 10px 10px 10px;
+     text-align: left;
+     margin-right: 210px;
+       }
+    
+
+        
+       
+       
+    
+            
+        }

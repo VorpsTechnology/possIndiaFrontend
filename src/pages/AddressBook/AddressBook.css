@@ -1,0 +1,19 @@
+#rowitem{
+    padding: 20px;
+    min-width: 200px;
+    text-align: left;
+    font-weight: 600;
+    color: #333333;
+    box-shadow: -2px 0px 14px 0 rgb(36 37 38 / 8%);
+}
+
+.Addressbutton button{
+    background-color: #F3CA6D;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}

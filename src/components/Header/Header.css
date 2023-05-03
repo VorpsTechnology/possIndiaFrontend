@@ -1,0 +1,12 @@
+*{
+   font-family: 'Poppins', sans-serif;
+  
+}
+
+.header h4{
+padding-top: 30px;
+padding-bottom: 30px;
+color:rgba(56, 43, 40, 1);
+font-weight: 700;
+line-height: 50px;
+}

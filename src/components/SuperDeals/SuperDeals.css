@@ -1,0 +1,117 @@
+@media only screen and (min-width: 1200px) {
+    * {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+    
+    .MediaDEalcard{
+            display: none;
+     }
+    
+    #superdealcard {
+        border-radius: 11px;
+        width: 400px;
+       
+        height: 328px;
+    
+        background-color: #FFFFFF;
+    }
+    
+    .OurServiceSlider h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+       padding: 40px;
+    }
+    
+    #crdroes{
+        display: flex;
+        padding: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .OurServiceSlider h4 {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-weight: 650;
+    }
+    .flex-container20 {
+        display: inline-flex;
+    }
+    
+#Delasblock{
+    display:none
+}
+   #crdroes{
+        display: inline;
+    }
+    #superdealcard{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #dealcarrd img{
+        height:50px;
+        width: 50px;
+    }
+    #crdroes{
+        display: flex;
+    }
+
+    #crd{
+        display:none
+    }
+
+}
+
+@media only screen and (min-width:321px) { 
+    .MediaDEalcard{
+        display: block;
+    }
+    .PRoductimg img{
+        height:300px;
+        
+        
+    }
+    .OurServiceSlider h4 {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-weight: 650;
+    }
+    .flex-container20 {
+        display: inline-flex;
+    }
+    
+#Delasblock{
+    display:none
+}
+   #crdroes{
+        display: inline;
+    }
+    #superdealcard{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #dealcarrd img{
+        height:50px;
+        width: 50px;
+    }
+    #crdroes{
+        display: flex;
+    }
+
+    #crd{
+        display:none
+    }
+
+   
+}

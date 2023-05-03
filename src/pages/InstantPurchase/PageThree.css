@@ -1,0 +1,225 @@
+.cardorder {
+    position: absolute;
+    width: auto;
+    height: 846.93px;
+    top: 542px;
+    filter: drop-shadow(0px 4.70518px 37.6415px rgba(0, 0, 0, 0.25));
+    
+}
+#orderpack{
+    display:flex;justify-content:space-between;margin:50px 50px 50px 50px;
+}
+
+#comple{
+  display:flex;justify-content:space-evenly;margin:20px 50px 20px 50px;
+}
+#cardpurchase {
+    width: 800px;
+    height: auto;
+    filter: drop-shadow(0px 4.70518px 37.6415px rgba(0, 0, 0, 0.25));
+    background-color: #F4F7EE;
+    margin-top: 40px;
+ 
+   
+}
+.nameinput{
+ width:250px;outline-color:transparent;
+}
+.orderComplete {
+    background-color: #F9C058;
+    width: 200px;
+    height: 50px;
+    left: 368.88px;
+    background: #F9C058;
+    border-radius: 65.8726px;
+    border-color: transparent;
+    color: black;
+    font-weight: 700;
+}
+
+.priceComplete {
+    width: 150px;
+    height: 50px;
+    left: 766.46px;
+    top: 1213.67px;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+.homebtn button {
+    width: 200px;
+    padding: 15px;
+    background: #F9C058;
+    border-radius: 65.8726px;
+    border-color: transparent;
+}
+
+.homebtn {
+    margin-top: 50px;
+}
+
+#cardpro {
+    width: auto;
+    height: auto;
+    background: #F4F4F4;
+    border-radius: 10.3117px;
+}
+
+.bottomleft {
+  
+    bottom: 8px;
+    left: 16px;
+    display:block;
+    font-size: 18px;
+  }
+
+  .bootomright{
+    right:0;
+    bottom: 0;
+    position: absolute;
+    transform: translateY(-500px);
+    display: block;
+  }
+
+  .jil{
+    display: none;
+}
+.jil img{
+    display: none;
+    justify-content: right;
+}
+
+.pip{
+    display: none;
+}
+.pip img{
+    display: none;
+}
+
+  @media only screen and (max-width: 600px) {
+  
+
+    #cardpurchase {
+        width: auto;
+        height: auto;
+        filter: drop-shadow(0px 4.70518px 37.6415px rgba(0, 0, 0, 0.25));
+        background-color: #F4F7EE;
+        margin-top: 40px;
+       
+    }
+    .orderComplete {
+        background-color: #F9C058;
+        width: 200px;
+        height: 50px;
+        left: 368.88px;
+        background: #F9C058;
+        border-radius: 65.8726px;
+        border-color: transparent;
+        color: black;
+        font-weight: 700;
+    }
+
+    .pip{
+        display: block;
+    }
+
+    
+    .pip img{
+        display: block;
+        justify-content: right;
+        transform: translateY(-50px);
+    }
+    .jil{
+        display: block;
+    }
+    .jil img{
+        display: block;
+        justify-content: right;
+    }
+    .bottomleft{
+        display: none;
+    }
+    
+    .bootomright{
+        display: none;
+    }
+    #orderpack{
+        display:inline;justify-content:center;margin:10px 10px 10px 10px;
+    }
+    #comple{
+        display:flex;justify-content:space-evenly;margin:20px 20px 20px 20px;
+        padding: 10px;
+      }
+      .orderComplete {
+        background-color: #F9C058;
+        width: 150px;
+        height: 50px;
+        left: 368.88px;
+        background: #F9C058;
+        border-radius: 65.8726px;
+        border-color: transparent;
+        color: black;
+        font-weight: 700;
+    }
+    .priceComplete {
+        width: 150px;
+        height: 50px;
+        left: 766.46px;
+        top: 1213.67px;
+        border-color: transparent;
+        border-radius: 20px;
+        margin-left: 5px
+    }
+    .nameinput{
+        width:140px;outline-color:transparent;
+       }
+       #cardpro {
+        width: auto;
+        height: auto;
+        background: #F4F4F4;
+        border-radius: 10.3117px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #cardpurchase {
+        width: auto;
+        height: auto;
+        filter: drop-shadow(0px 4.70518px 37.6415px rgba(0, 0, 0, 0.25));
+        background-color: #F4F7EE;
+        margin-top: 40px;
+       
+    } 
+    #orderpack{
+        display:inline;justify-content:center;margin:10px 10px 10px 10px;
+    }
+    #cardpro {
+        width: auto;
+        height: auto;
+        background: #F4F4F4;
+        border-radius: 10.3117px;
+   
+        
+    }
+    .orderComplete {
+        background-color: #F9C058;
+        width: 100px;
+        height: 50px;
+       
+        background: #F9C058;
+        border-radius: 65.8726px;
+        border-color: transparent;
+        color: black;
+        font-weight: 700;
+    }
+    .priceComplete {
+        
+        height: 50px;
+        width: 100px;
+        border-color: transparent;
+        border-radius: 20px;
+        margin-left: 5px
+    }
+    
+}
+

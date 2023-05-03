@@ -1,0 +1,250 @@
+@media only screen and (min-width: 1200px) {
+    * {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+
+
+#priceContainer{
+    display: block;
+}
+
+.serviceheader h4{
+    color: rgba(56, 43, 40, 1); 
+    font-weight: 700;
+    font-size: 50px;
+ 
+}
+.Pricesheader h4 {
+    color: rgba(56, 43, 40, 1);
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: inline;
+    text-align: center;
+    margin-bottom:40px ;
+}
+#cardPriceDesktop{
+    width: 400px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height:830px;
+    box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+}
+#pricerow{
+    display: flex;
+    justify-content: center;
+  
+}
+.headerbook h2 {
+    color: black;
+    font-weight: 800;
+    padding: 20px;
+    font-size: 20px;
+}
+.listst{
+    text-align: left; 
+    height:650px
+}
+.listst li {
+    padding: 4px 4px 15px 4px;
+    font-size: 10px;
+}
+.listitems {
+    text-align: left;
+    height:650px
+    
+}
+
+.listitems li {
+   
+    font-size: 10px;
+}
+#cardPriceDesktop:hover {
+    box-shadow: -103px 30px 100px rgba(0, 0, 0, 0.15);
+    
+    background-color: #E6EBE5;
+}
+    .layout{
+        display: block;
+    }
+    
+    .MediaPrice{
+            display: none;
+     }
+    
+    #superdealcard {
+        border-radius: 11px;
+        width: 400px;
+       
+        height: 328px;
+    
+        background-color: #FFFFFF;
+    }
+    
+    .OurServiceSlider h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+       padding: 40px;
+    }
+    
+ 
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+    .OurServiceSlider h4 {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-weight: 650;
+    }
+    .flex-container20 {
+        display: inline-flex;
+    }
+    .serviceheader h4{
+        color: rgba(56, 43, 40, 1); 
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    #dealcarrd img{
+        height:50px;
+        width: 50px;
+    }
+    #pricerow{
+        display:none;
+    }
+
+    #crd{
+        display:none
+    }
+    .layout{
+        display:none;
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:321px) { 
+    .MediaPrice{
+        display: block;
+    }
+    .PRoductimg img{
+        height:300px;
+        
+        
+    }
+    .serviceheader h4{
+        color: rgba(56, 43, 40, 1); 
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    .layout{
+        display:none;
+    }
+    .OurServiceSlider h4 {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-weight: 650;
+    }
+    .flex-container20 {
+        display: inline-flex;
+    }
+
+   #pricerow{
+        display: none;
+    }
+    #superdealcard{
+        width: 180px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #dealcarrd img{
+        height:50px;
+        width: 50px;
+    }
+    #pricerow{
+        display: none;
+    }
+
+    #crd{
+        display:none
+    }
+
+   
+}

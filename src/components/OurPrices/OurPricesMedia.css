@@ -1,0 +1,268 @@
+@media only screen and (min-width: 1200px) {
+    * {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+
+
+    .layout{
+        display: block;
+    }
+    
+    .serviceheader h4{
+        color: rgba(56, 43, 40, 1); 
+        font-weight: 700;
+        font-size: 50px;
+     
+    }
+    .MediaPrice{
+            display: none;
+     }
+    
+    #superdealcard {
+        border-radius: 11px;
+        width: 400px;
+       
+        height: 328px;
+    
+        background-color: #FFFFFF;
+    }
+    
+    .OurServiceSlider h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+       padding: 40px;
+    }
+    
+    #pricerow{
+        display: flex;
+        
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    .Pricesheader{
+        display:block;
+        padding: 40px;
+        text-align: center;
+    }
+
+    
+}
+@media only screen and (min-width: 992px) {
+    #priceblock{
+        display:block;
+    }
+    
+    .MediaPrice{
+        display: none;
+    }
+    .layout{
+        display: none;
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    #cardPrice {
+        width:400px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        height:auto;
+        box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+        padding: 40px 0px 40px 0px;
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width: 400px)  and (max-width:600px) {
+    .MediaPrice{
+        display: block;
+    }
+    .PRoductimg img{
+        height: 300px;
+        
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    #cardPrice {
+        width:370px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        height:auto;
+        box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+        padding: 40px 0px 40px 0px;
+    
+    }
+   
+}
+
+@media only screen and (min-width: 393px)  and (max-width:600px) {
+    .MediaPrice{
+        display: block;
+    }
+    .PRoductimg img{
+        height: 300px;
+        
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    #cardPrice {
+        width:350px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        height:auto;
+        box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+        padding: 40px 0px 40px 0px;
+    
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+   
+}
+
+@media only screen and (max-width: 300px) {
+    .PRoductimg img{
+        height: 300px;
+        width:200px
+        
+    }
+    .layout{
+        display:none;
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    #cardPrice {
+        width:250px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        height:auto;
+        box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+        padding: 40px 0px 40px 0px;
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:540px) and (max-width:912px){
+    .MediaPrice{
+        display: block;
+    }
+    .PRoductimg img{
+        height: 300px;
+        
+    }
+    .booknowbtn {
+        width: 150px;
+        background-color: #F3CA6D;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        align-items: center;
+    }
+    #cardPrice {
+        width:400px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        height:auto;
+        box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
+        padding: 40px 0px 40px 0px;
+    }
+    .Pricesheader{
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: inline;
+        text-align: center;
+    }
+}
+

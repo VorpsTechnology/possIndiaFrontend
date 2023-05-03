@@ -1,0 +1,96 @@
+  
+        .Conatctheader h4 {
+            color: rgba(56, 43, 40, 1);
+            font-weight: 700;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .img img{
+            width:1000px
+        }
+        #desklop{
+            display: block;
+           padding: 40px;
+        }
+       
+            @-webkit-keyframes scroll {
+            0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            }
+            100% {
+            -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+            }
+            }
+            @keyframes scroll {
+            0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            }
+            100% {
+            -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+            }
+            }
+            .slider {
+          
+           
+            height: auto;
+            margin: auto;
+            overflow: hidden;
+            
+            width: auto;
+            }
+            .slider::before, .slider::after {
+           
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+            }
+            .slider::after {
+            right: 0;
+            top: 0;
+            -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+            }
+            .slider::before {
+            left: 0;
+            top: 0;
+            }
+            .slider .slide-track {
+            -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+            }
+            .slider .slide {
+            height: auto;
+            width: 250px;
+            }
+@media only screen and (max-width: 600px) {
+  
+        .Conatctheader h4 {
+            color: rgba(56, 43, 40, 1);
+            font-weight: 700;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        
+        .img img{
+            width:350px
+        }
+        #desklop{
+            display: block;
+        }
+        
+  }
+

@@ -1,0 +1,182 @@
+.desktopnavbar{
+    display: block;
+}
+#navbarDropdown {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.78px;
+    font-weight: 500;
+  
+}
+
+
+
+.navbar-brand{
+    padding-left:20px  ;
+}
+
+
+#navlinka {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.78px;
+}
+
+#navlinka:hover {
+    background-color: #F3CA6D;
+}
+
+.nav-link:hover {
+    background-color: #F3CA6D;
+}
+
+.dropbtnlogo {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content20 {
+    display: none;
+
+    background-color: #fff;
+    min-width: 160px;
+    
+    z-index: 1;
+    margin-left: -60px;
+  
+}
+
+.dropdown-content20 a {
+    padding: 5px 30px 10px; 
+    font-size: 15px;
+    font-weight: 650;
+    background: #fff;
+    border-color: transparent;
+    display: block;
+}
+
+.dropdown-content20 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content20 {
+    display: block;
+}
+
+.dropdown:hover .dropbtnlogo {
+    background-color: transparent;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background: #F3CA6D;
+    font-size: 15px;
+    font-weight: 650;
+   
+ 
+}
+ 
+.dropdown-menu{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .dropdown-item{
+    padding: 5px 30px 10px; 
+    font-size: 15px;
+    font-weight: 650;
+    background: #fff;
+    border-color: transparent;
+   
+}
+.MediaNavbar{
+    display: none;
+}
+
+.liskmin{
+    display: flex;
+    list-style: none;
+    margin:10px ;
+    padding-left: 10px;
+}
+#liskmit{
+    padding-left: 20px;
+}
+
+#liskmit li{
+    padding-left: 20px;
+}
+
+#serachbar{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .desktopnavbar{
+        display: none;
+    }
+    .MediaNavbar{
+        display: flex;
+    }
+
+    .liskmin{
+        display: flex;
+        list-style: none;
+        margin:10px ;
+        padding-left: 10px;
+        justify-content: space-between;
+    }
+    
+    #liskmit li{
+        padding-left: 0px;
+     
+    }
+    
+    #serachbar{
+        display: none;
+    }
+    .navbar-brand{
+        padding-left:0px  ;
+    }
+    #liskmit{
+        padding-left: 0px;
+       
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .desktopnavbar{
+        display: none;
+    }
+    .MediaNavbar{
+        display: flex;
+    }
+
+    .liskmin{
+        display: flex;
+        list-style: none;
+        margin:10px ;
+        padding-left: 10px;
+        justify-content: space-between;
+    }
+    
+    #liskmit li{
+        padding-left: 0px;
+     
+    }
+    
+    #serachbar{
+        display: none;
+    }
+    .navbar-brand{
+        padding-left:0px  ;
+    }
+    #liskmit{
+        padding-left: 0px;
+       
+    }
+}

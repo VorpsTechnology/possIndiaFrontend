@@ -1,0 +1,106 @@
+
+    #accountcard{
+        box-shadow: -6px 2px 8px 0 rgb(36 37 38 / 8%);
+        background-color: #fbfbfb;
+        padding: 20px;
+     }
+     
+     .headeraccount{
+         font-size: 15px;
+         font-weight: 700;
+     }
+     
+  
+     .manageaccount{
+         font-weight: bold;
+         font-size:18px ;
+         line-height: 1;
+         color: #333333;
+         padding: 10px;
+     }
+     
+     .para{
+         font-size: 12px;
+         color: #7f7f7f;
+         padding: 5px;
+     }
+     
+     #rowid{
+         display: flex;
+     }
+     
+     .mediaview{
+         margin-top:20px;margin-bottom:20px
+      }
+
+
+@media only screen and (max-width: 600px) {
+    #rowid{
+        display:inline;
+        width: 100%;
+        
+    }
+    #colid2{
+        width:100%
+    }
+    #colid{
+        width: 100%;
+    }
+    .mediaview{
+       margin-top:50px;margin-bottom:40px
+    }
+}
+
+
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    #rowid{
+        display:inline;
+        width: 100%;
+        
+    }
+    #colid2{
+        width:100%
+    }
+    #colid{
+        width: 100%;
+    }
+    .mediaview{
+       margin-top:50px;margin-bottom:40px
+    }
+}
+@media only screen and (min-width:768px) and (min-height:1024px){
+    #rowid{
+        display:inline;
+        width: 100%;
+        
+    }
+    #colid2{
+        width:100%
+    }
+    #colid{
+        width: 100%;
+    }
+    .mediaview{
+       margin-top:50px;margin-bottom:40px
+    }   
+}
+@media (max-width:820px) and (max-height:1180px){
+    #rowid{
+        display:inline;
+        width: 100%;
+        
+    }
+    #colid2{
+        width:100%
+    }
+    #colid{
+        width: 100%;
+    }
+    .mediaview{
+       margin-top:50px;margin-bottom:40px
+    } 
+}
+
+
+

@@ -1,0 +1,19 @@
+.inputbox2{
+    color: #333333;
+    transition: all 0.6s linear;
+    border: 2px solid transparent;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    background-clip: padding-box;
+    padding: 0 18px;
+    height: 40px;
+    outline: #F3CA6D;
+    width: 100%;
+}
+
+.adfl{
+    color: black;
+    font-size: 15px;
+    font-weight: 650;
+    margin: 20px;
+}

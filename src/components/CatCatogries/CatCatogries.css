@@ -1,0 +1,54 @@
+.Catheader {
+    color: rgba(56, 43, 40, 1);
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+#catcontainer {
+    padding: 40px 80px 40px 40px
+}
+
+.catslider{
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+
+.Mediacontainer{
+    display: none;
+}
+
+#catcat{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+    .Catheader{
+        font-size: 20px;
+    }
+    .container200 {
+        display: inline;
+    }
+
+    #catcat{
+        display: none;
+    }
+    .flexcontainer {
+        display: inline;
+        justify-content: center;
+    }
+
+    .catslider{
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .Mediacontainer{
+        display: block;
+    }
+ 
+    
+}

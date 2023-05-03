@@ -1,0 +1,48 @@
+#tabcontainer {
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 27px;
+}
+
+.tabbtn {
+    background-color: #D9D9D9;
+    border-color: transparent;
+    width: auto;
+    padding: 10px;
+    font-weight: 800;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 5px 15px 5px;
+    width: 331px;
+}
+
+.tabbtn:active {
+    background-color: white;
+    border-color: black;
+    width: 331px;
+}
+
+.selected-tab {
+    background-color: #F3CA6D;
+    color: #ffffff;
+    width: 200px;
+    border-color: transparent;
+    width: 331px;
+}
+
+.tablist {
+    justify-content: center;
+    text-align: center;
+    background-color: "yellow";
+}
+
+.tabconetnt {
+    margin: "10px";
+}
+
+#collabel{
+    font-size: 15px;
+    font-weight: 700;
+}

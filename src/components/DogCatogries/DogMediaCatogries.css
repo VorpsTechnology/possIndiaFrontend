@@ -1,0 +1,141 @@
+.dogheader {
+    color: rgba(56, 43, 40, 1);
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+.dropdownbutton {
+    position: relative;
+    display: inline-block;
+}
+
+#dogcontainer {
+    padding: 40px 80px 40px 40px
+}
+
+.dropdown-content20 {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    min-width: 120px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cardtitle {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown-content20 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content20 a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdownbutton:hover .dropdown-content20 {
+    display: block;
+}
+
+.dropbtn20 {
+    border-color: transparent;
+    background-color: transparent;
+    height: 15px
+}
+
+.dropdown-content20 a img {
+    height: 30px
+}
+
+.container200 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px
+}
+.dogslider{
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.flexl{
+    display: none;
+}
+#dogdog{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .dogheader {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #dogdog{
+        display: none;
+    }
+
+    .flexl{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flexp{
+        justify-content: left;
+    }
+
+    .flexr{
+        justify-content: right;
+    }
+
+    .dogslider{
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .container200 {
+        display: inline;
+    }
+    .flexcontainer {
+        display: inline;
+        justify-content: center;
+    }
+    .dogheader select{
+        font-size:15px;text-align:center;background-color:white;font-weight:800;border-color:white;border-radius:12px;padding:5px;outline:transparent;margin-left:20px;width:130px 
+    }
+}
+
+@media(max-width: 320px){ 
+    .inner img{
+height:200px;
+width: 150px;
+    }
+    .dogheader select{
+        font-size:15px;text-align:center;background-color:white;font-weight:650;border-color:white;border-radius:12px;padding:5px;outline:transparent;width:10px 
+    }
+    .dropdown-content20 {
+        display: none;
+        position: absolute;
+        background-color: #FDFDFD;
+        min-width: 150px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+   
+}

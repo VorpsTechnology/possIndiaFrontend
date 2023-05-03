@@ -1,0 +1,703 @@
+.header {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.nameinput3{
+    width:200px ;
+    background: #FFFFFF;
+    border-color: transparent;
+    outline: transparent;
+}
+
+.forml{
+  justify-content: left;
+  margin: 40px;
+}
+
+.paym{
+    margin-left:40px
+}
+
+.tabgo{
+  margin-top:50px; 
+}
+#cardt{
+    display:'flex'
+}
+
+.paym{
+    display: block;
+}
+
+.cit{
+    margin-left:5px;outline:transparent
+}
+
+.back{
+    background-color: #F9C058;
+    border-color: transparent;
+    width:150px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left:20px
+}
+
+#bgimg img {
+    display: block;
+}
+.Mobileinputarea{
+    width:520px;
+}
+.logininputarea{
+    width: 520px;
+}
+
+.nameinput12{
+    width:250px;
+    background-color: rgba(255, 255, 255, 1);
+   
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgb(230 235 229);
+    padding: 7px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.phots img {
+    float: right;
+    transform: translateY(100px);
+}
+.phots img {
+   display: block;
+}
+
+.flex-container10 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 20px 50px;
+}
+
+#paybutton {
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.dogflot {
+    float: right;
+    transform: translateY(-100px);
+}
+
+.dogflot {
+  display: block;
+}
+
+label h4 {
+    margin-top: 10px;
+}
+
+#paycards {
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#paycards:hover {
+    box-shadow: 3px 16px 20px rgba(0, 0, 0, 0.25);
+}
+
+#carddate {
+    width: 500px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 13px;
+}
+
+#carddate h5{
+    font-size: 18px;
+    font-weight: 650;
+}
+
+#paycards h3 {
+    font-weight: 500;
+    font-size: 15px;
+   
+}
+
+.cardbtn4{
+    border-color: transparent;
+    background-color: transparent;
+    outline: transparent;
+    text-align: left;
+    width: 350px;
+}
+
+.headerpay {
+    color: #000000;
+    font-weight: 800;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 800;
+
+}
+
+.paybtn2 {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #F9C058;
+    border-color: transparent;
+    border-radius: 56px;
+    width: 200px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+
+#content img {
+    position: relative;
+}
+
+.pic img {
+    float: right;
+}
+
+.pic {
+    position: relative;
+}
+
+#tabcontainer {
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 27px;
+}
+
+.flexcontent2{
+    display: flex;
+    width: 500px;
+}
+
+#paybtn2{
+    margin-top:40px
+}
+.payupi {
+    width: 180px;
+    height: 50px;
+    background: #F9C058;
+    border-radius: 56px;
+    border-color: transparent;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 700;
+}
+.formc{
+    display: flex;margin:20px
+}
+.lastn{
+margin-left:20px;
+}
+
+
+
+.tabbtn {
+    background-color: #D9D9D9;
+    border-color: transparent;
+   
+    padding: 10px;
+    font-weight: 800;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 5px 15px 5px;
+    width: 331px;
+}
+
+.tabbtn:active {
+    background-color: white;
+    border-color: transparent;
+    width: 331px;
+}
+
+.selected-tab {
+
+    color: black;
+    width: 200px;
+    border-color: transparent;
+    width: 331px;
+    border-bottom: #F3CA6D;
+}
+.poi{
+    width: 500px;
+}
+.flexcontent{
+    
+    
+    justify-content: center;
+    display:inline;justify-content:space-between;padding-left:30px;margin-top:30px
+  }
+
+.tabconetnt {
+    margin: "10px";
+}
+
+#cardh{
+    display:inline;
+}
+
+#bgimg img{
+    position: absolute;
+right: 150px;
+
+height:350px;
+transform: translateY(-260px);
+}
+#cardq{
+    justify-content:right;
+    margin-top: 20px;
+}
+#line{
+    justify-content: left;
+}
+
+
+
+   #lipimg{
+    float:right;
+    display: none;
+}
+
+.flexcontent2{
+    display: block;
+    width: 500px;
+}
+
+#mediacv{
+    display: block;
+   }
+
+   #mediaimg{
+    display: none;
+    transform: translateY(100px);
+}
+
+#mediaimg{
+    display: none;
+    justify-content: right;
+}
+
+
+.cardfom{
+    display: none;
+}
+
+.desktopv{
+    display:none
+}
+.paymmedia{
+    display: none;
+}
+
+.ghn{
+    margin-left: 15px;
+}
+.ghn2{
+    margin-left: 15px; 
+}
+.ghn3{
+    margin-left: 15px;   
+}
+.ghn4{
+    margin-left: 15px;  
+}
+.ghn5{
+    margin-left: 15px;    
+}
+ 
+.flecxLeft{
+    justify-content: left;
+  }
+  .flexcright{
+    justify-content: right;
+}
+label{
+    color:black;
+    font-weight: 650;
+    font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+
+    #lipimg{
+        float:right;
+        display: block;
+        transform: translateY(-200px);
+    }
+    label{
+        color:black;
+        font-weight: 650;
+        font-size: 15px;
+    }
+    .flexcright{
+        justify-content: center;
+    }
+    .ghn5{
+        margin-left: 100px;    
+    }
+    .ghn3{
+        margin-left: 100px;   
+    }
+    .ghn4{
+        margin-left: 120px;  
+    }
+    .ghn{
+        margin-left: 120px;
+    }
+
+    .flexcontent2{
+        width:300px ;
+    }
+
+    .forml{
+        justify-content: center;
+        margin: 2px;
+      }
+    
+.tabgo{
+    margin-top:20px; 
+  }
+
+    .ghn2{
+        margin-left: 100px; 
+    }
+    .paymmedia{
+        display: block;
+    }
+
+    .desktopv{
+        display:block;
+    }
+
+    .paymmedia{
+        display: block;
+    }
+
+   #mediacv{
+    display: none;
+   }
+
+    .paym{
+        display: none;
+    }
+    
+    #mediaimg{
+        display: block;
+        transform: translateY(100px);
+    }
+
+    .cardfom{
+        display: block;
+    }
+
+    #mediaimg{
+        display: block;
+        justify-content: right;
+    }
+    #carddate {
+        width: 250px;
+        padding: 20px;
+        background: #FFFFFF;
+        border-radius: 13px;
+        margin-top: 20px
+    }
+    .back{
+        background-color: #F9C058;
+        border-color: transparent;
+        width:100px;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left:20px;
+        margin-top: 20px;
+    
+    }
+    
+.paym{
+    margin-left:0px;
+    justify-content: center;
+}  
+#paycards {
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 15px;
+   text-align: left;
+}
+    
+.paybtn2 {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #F9C058;
+    border-color: transparent;
+    border-radius: 56px;
+    width: 200px;
+    margin-bottom: 80px;
+    height: 50px;
+  
+}
+    .tabbtn:active {
+        background-color: white;
+        border-color: transparent;
+        width: 100px;
+    }
+    .cardbtn4{
+        border-color: transparent;
+        background-color: transparent;
+        outline: transparent;
+        text-align: center;
+        width: 300px;
+    }
+    #cardh{
+        display:inline;
+        justify-content: center;
+        
+      
+    }
+   #container2{
+    margin-top: 20px;
+    
+    align-items: center;
+   }
+
+
+    
+
+    
+    #cardq{
+        justify-content: center;
+    }
+    #line{
+        justify-content: center;
+    }
+    .cit{
+        margin-left:0px;outline:transparent
+    }
+
+    #cardt{
+        display:inline;
+        justify-content: center;
+    }
+    .headerpay {
+        color: #000000;
+        font-weight: 600;
+        font-size: 25px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+      
+        justify-content: center;
+  
+    }
+ 
+
+    
+#paybtn20{
+    margin-top:40px
+}
+    
+.nameinput12{
+    background-color: rgba(255, 255, 255, 1);
+    width: 300px;
+    border-color: transparent;
+    border-radius: 5px;
+    outline-color: #F2C879;
+    box-shadow: 3px 4px 5px rgb(230 235 229);
+    padding: 7px;
+    margin-top: 3px;
+    margin: 10px;
+}
+    .tabbtn {
+        background-color: #D9D9D9;
+        border-color: transparent;
+       font-size: 15px;
+      padding: 5px;
+        font-weight: 600;
+        height: 50px;
+        align-items: center;
+        border-radius: 10px;
+   
+        width:100px;
+    }
+    .selected-tab {
+    
+        color: black;
+      
+        border-color: transparent;
+        width: 100px;
+        border-bottom: #F3CA6D;
+    }
+    .lastn{
+        margin-right:220px;
+        }
+
+        .Mobiletext{
+            margin-right:180px;  
+        }
+        .fstn{
+            margin-right:220px;  
+        }
+    .flex-container10 {
+        display: inline;
+        justify-content: center;
+        margin: 10px 10px 10px 10px;
+    }
+    .flex-item-right10{
+
+        justify-content: center;
+        text-align: center;
+    }
+    .flex-item-left10{
+
+        justify-content: center;
+        text-align: center;
+    }
+    .nameinput{
+        width:140px;
+        text-align: center;
+    }
+    .Mobileinputarea{
+        width:300px;
+    }
+    .logininputarea{
+        width: 300px;
+    }
+
+    #bgimg img{
+        display: none;
+    }
+    .phots img {
+        display: none;
+     }
+     .formc{
+        display: inline;margin:0px
+    }
+     
+.dogflot {
+    display: none;
+  }
+  .flexcontent{
+    
+    justify-content: center;
+
+    display:block;padding:0px;margin-top:30px
+    
+  }
+  
+  .flecxLeft{
+    justify-content: center;
+  }
+
+.boxpi{
+    width:150px
+}
+
+.header {
+    color: #000000;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+}
+
+
+}
+
+@media(max-width: 320px){ 
+   
+    #paycards {
+        width: 250px;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        color: black;
+        font-size: 15px;
+       text-align: left;
+    }
+
+    
+    .flexcontent2{
+        width:230px ;
+        justify-content: center;
+    }
+
+    .paybtn20 {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: #F9C058;
+        border-color: transparent;
+        border-radius: 56px;
+        width: 200px;
+        margin-bottom: 80px;
+        height: 50px;
+      
+    }
+    .forml{
+        justify-content: center;
+        margin: 5px;
+      }
+    #carddate {
+        width: 230px;
+        padding: 20px;
+        background: #FFFFFF;
+        border-radius: 13px;
+        margin-top: 20px
+    }
+
+    .nameinput3{
+        width: 200px;
+        background: #FFFFFF;
+        border-color: transparent;
+    }
+
+    .Mobiinput{
+        width: 230px;
+    }
+    #paycards {
+        width: 230px;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        color: black;
+        font-size: 15px;
+       text-align: left;
+    }
+    #lipimg{
+        float:right;
+        display: block;
+        transform: translateY(-150px);
+    }
+
+ 
+   
+       
+      
+}

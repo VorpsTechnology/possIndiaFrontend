@@ -1,0 +1,24 @@
+.onClickbtn {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: #F3CA6D;
+    border-radius: 84.0508px;
+    border-color: transparent;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+.backbtn {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: #F3CA6D;
+    border-radius: 84.0508px;
+    border-color: transparent;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 50px;
+}
