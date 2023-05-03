@@ -561,7 +561,7 @@ const handleSearchInput=async(e)=>{
         Brand : {brandCatagoryy && brandCatagoryy.map((e)=>(
           <>
           <button style={{color:"#1BB5C0",borderRadius:"20px"}} onClick={()=>{removebrand(e)}}>{e} ⨂</button> 
-          </>
+          </>  
         ))}
         </div>
       }
