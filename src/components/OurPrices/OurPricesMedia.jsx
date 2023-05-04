@@ -40,7 +40,7 @@ function OurPriceMedia() {
              modifier: 1.5,
              slideShadows: false,
              centeredSlides: true,
-             loop: true,
+             loop: false,
              paginationClickable: true,
              pagination: '.swiper-pagination',
            }
@@ -58,8 +58,8 @@ function OurPriceMedia() {
        
          
          <SwiperSlide >
-        <div>
-        <div className='card lg-shadow' id='cardPrice'>
+        <div >
+        <div className='card lg-shadow' id='cardPrice' >
         <div align="center" className='headerbook' ><h2>Haircut & Styling</h2></div>
         {/* <div align="center" className='pricebook'> <h2>₹2499.00</h2> </div> */}
         <div style={{textAlign:'left'}} >

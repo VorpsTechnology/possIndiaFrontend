@@ -388,7 +388,7 @@ const handleSearchInput=async(e)=>{
   <>
  <img onClick={()=>{
   navigate("/")
- }} src={posslogogif } style={{width:"70px",height:'70px',borderRadius:'20px'}} alt="" />
+ }} src={posslogogif } style={{width:"70px",height:'70px',borderRadius:'40px'}} alt="" />
   </>
 
       </a>
@@ -624,13 +624,13 @@ const handleSearchInput=async(e)=>{
     </nav>
   </div>
 {/* navbar ends here */}
-  <div className='container-fluid'>
+  <div className='container-fluid' style={{display:"flex"}}>
 
-  <div className='flexco'>
+  <div className='flexco' style={{justifyContent:"space-around"}} >
     <div className='flexit1'>
       <div style={{display:'flex'}}>
       <div><select  className='selectbox' 
-      
+        style={{width:"100%"}}
       onChange={handlePetSelect} 
       id="">
         <option value={params.id}>PET CATEGORY</option>
@@ -644,8 +644,9 @@ const handleSearchInput=async(e)=>{
          <option value="GUINEA PIG">GUINEA PIG</option>
          <option value="DOG">All</option>
         </select></div>
-      <div style={{marginLeft:'10px',width:"3rem"}}><select  
+      <div style={{marginLeft:'10px'}}><select  
       onChange={handleTypeSelect} 
+      style={{width:"100%"}}
       className='selectbox' name="" id="">
         <option value={params.type}>TYPE CATEGORY</option>
         <option value="FOOD">FOOD </option>
@@ -660,36 +661,40 @@ const handleSearchInput=async(e)=>{
         </select></div>
       </div>
      <div style={{display:"block"}}>
-    {petCatagoryy.length>0 &&  <div style={{marginTop:"10px"}}>
-      Pet : {petCatagoryy && petCatagoryy.map((e)=>(
+     <div style={{marginTop:"10px"}}>
+    {petCatagoryy.length>0 &&  
+ petCatagoryy && petCatagoryy.map((e)=>(
         <>
-        <button style={{color:"#1BB5C0",borderRadius:"20px"}} onClick={()=>{removePet(e)}}>{e} ⨂</button> 
+        <button style={{fontSize:"10px" ,color:"black",borderRadius:"20px",backgroundColor:"#F3CA6D",borderColor:"transparent"}} onClick={()=>{removePet(e)}}>{e} ⨂</button> 
         </>
       ))}
-      </div>} 
-     {
-      typeCatagoryy.length>0 &&  <div style={{marginTop:"10px"}}>
-      Type : {typeCatagoryy && typeCatagoryy.map((e)=>(
+        {
+      typeCatagoryy.length>0 && 
+     typeCatagoryy && typeCatagoryy.map((e)=>(
         <>
-<button style={{color:"#1BB5C0",borderRadius:"20px"}} onClick={()=>{removetype(e)}}>{e} ⨂</button> 
+<button style={{fontSize:"10px" ,color:"black",borderRadius:"20px",marginLeft:"5px",backgroundColor:"#F3CA6D",borderColor:"transparent"}} onClick={()=>{removetype(e)}}>{e} ⨂</button> 
         </>
-      ))}
-      </div>
+      ))
+    
      }
-      {
-        brandCatagoryy.length>0 && <div style={{marginTop:"10px"}}>
-        Brand : {brandCatagoryy && brandCatagoryy.map((e)=>(
+   
+{
+        brandCatagoryy.length>0 && 
+       brandCatagoryy && brandCatagoryy.map((e)=>(
           <>
-          <button style={{color:"#1BB5C0",borderRadius:"20px"}} onClick={()=>{removebrand(e)}}>{e} ⨂</button> 
+          <button style={{fontSize:"10px" ,color:"black",borderRadius:"20px",marginLeft:"5px",backgroundColor:"#F3CA6D",borderColor:"transparent"}} onClick={()=>{removebrand(e)}}>{e} ⨂</button> 
           </>  
         ))}
-        </div>
-      }
+      </div>
+   
+     
+   
+     
      </div>
     </div>
     <div className='flexit2'  >
     
-    <button  className='buttoncolor'  data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onClick={expand}> <b> <h5>Filter <span><img   src={filter} /></span></h5> </b> </button>
+    <button className='buttoncolor'  data-toggle="collapse"  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onClick={expand}> <b> <h5>Filter <span><img   src={filter} /></span></h5> </b> </button>
       <div  >
       <div  style={{display:'none' ,height:'100vh' ,backgroundColor:'#f1f1f1' ,width:"0px",}} >
       
@@ -1019,16 +1024,18 @@ const handleSearchInput=async(e)=>{
   <div className='container'>
 
         <div align='center'  id='rowlock' className='row'>
-      
+    
             <div>
           <div className='container' id='productcontainer' >
           <div align='center' id='procardlw'  className='row'>
+    
             {products &&
             products.length > 0 &&
             products.map((ele) => (
               
                 <div  className='col-md-2'  id='kil'   >
                 <div  id="Productcard30" className='card' >
+            
                     <div className='Productimg' style={{borderRadius:'20px'}} align="center"  onClick={()=>{
                       navigate(`/ProductPurchase/${ele._id}`)
                     }} ><img src={src(ele.uploadImages)} alt=""  /></div>

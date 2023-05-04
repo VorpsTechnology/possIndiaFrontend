@@ -29,14 +29,14 @@ function handleProduct(data){
     <>
    <img onClick={()=>{
     navigate("/")
-   }} src={posslogogif } className='logo' alt="" />
+   }} src={posslogogif } style={{borderRadius:"30px"}} className='logo' alt="" />
     </>
     </div>
     <div align='center' style={{justifyContent:'center'}}>
     <form  className='search-container' >
      
       
-      <p> <input  type="text" style={{width:'70%'}} placeholder="Search.." name="search" />  </p>
+      <p> <input  type="text"  style={{width:'70%'}} placeholder="Search.." name="search" />  </p>
       
     </form>
     </div>

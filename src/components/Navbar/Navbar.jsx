@@ -43,7 +43,7 @@ const handleSearch=()=>{
     <>
    <img onClick={()=>{
     navigate("/")
-   }} src={posslogogif } style={{width:"70px",height:'70px',borderRadius:'20px'}} alt="" />
+   }} src={posslogogif } style={{width:"70px",height:'70px',borderRadius:'40px'}} alt="" />
     </>
 
         </a>

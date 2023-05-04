@@ -84,12 +84,12 @@
         align-items: center;
     }
     #cardPrice {
-        width:400px;
+        width:350px;
         border-radius: 20px;
         background-color: #FFFFFF;
         height:auto;
         box-shadow: 0 2rem 3rem rgba(132, 138, 163, 0.1);
-        padding: 40px 0px 40px 0px;
+        padding: 20px 10px 20px 10px;
     }
     .Pricesheader{
         color: rgba(56, 43, 40, 1);
