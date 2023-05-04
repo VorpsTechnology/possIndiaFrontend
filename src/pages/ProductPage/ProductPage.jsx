@@ -32,34 +32,114 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
     const [category, setCategory] = useState("");
     // const [products, setProduct] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   
-  const handlePet=(e)=>{
+  const handlePet=async(e)=>{
+    if(petCatagoryy.includes(e)){
+      return
+    }else{
     const beta=[...petCatagoryy,e]
     setpetCatagoryy(beta)
+    const ata={
+      typeCatagoryy:typeCatagoryy,
+  
+      petCatagoryy:petCatagoryy,
+      brandCatagoryy:brandCatagoryy
+     }
+    
+    // You can await here
+    
+    const {data}=await getAllProducts(ata)
+    setProduct(data)
+    }
+    // ...
   }
 
- const handletype=(e)=>{
+ const handletype=async(e)=>{
+  if(typeCatagoryy.includes(e)){
+    return
+  }else{
   const beta=[...typeCatagoryy,e]
   settypeCatagoryy(beta)
+  const ata={
+    typeCatagoryy:typeCatagoryy,
+
+    petCatagoryy:petCatagoryy,
+    brandCatagoryy:brandCatagoryy
+   }
+  
+  // You can await here
+  
+  const {data}=await getAllProducts(ata)
+  setProduct(data)
+ }
+  // ...
  }
 
- const handleBrand=(e)=>{
-
- }
 
   
- const handlePetSelect=(e)=>{
+ const handlePetSelect=async(e)=>{
+  if(petCatagoryy.includes(e.target.value)){
+    return
+  }else{
     const beta=[...petCatagoryy,e.target.value]
+   
     setpetCatagoryy(beta)
+    const ata={
+      typeCatagoryy:typeCatagoryy,
+  
+      petCatagoryy:petCatagoryy,
+      brandCatagoryy:brandCatagoryy
+     }
+    
+    // You can await here
+    
+    const {data}=await getAllProducts(ata)
+    setProduct(data)
+ }
+    // ...
  }
 
-const handleTypeSelect=(e)=>{
-  const beta=[...typeCatagoryy,e.target.value]
-  settypeCatagoryy(beta)
+const handleTypeSelect=async(e)=>{
+ 
+  if(typeCatagoryy.includes(e.target.value)){
+    return
+  }else{
+    const beta=[...typeCatagoryy,e.target.value]
+    settypeCatagoryy(beta)
+    const ata={
+      typeCatagoryy:typeCatagoryy,
+  
+      petCatagoryy:petCatagoryy,
+      brandCatagoryy:brandCatagoryy
+     }
+    
+    // You can await here
+    
+    const {data}=await getAllProducts(ata)
+    setProduct(data)
+  
+    // ...
+  }
 }
 
-const handleBrandSelect=(e)=>{
+const handleBrandSelect=async(e)=>{
+  if(brandCatagoryy.includes(e.target.value)){
+    return
+  }else{
   const beta=[...brandCatagoryy,e.target.value]
   setbrandCatagoryy(beta)
+  const ata={
+    typeCatagoryy:typeCatagoryy,
+
+    petCatagoryy:petCatagoryy,
+    brandCatagoryy:brandCatagoryy
+   }
+  
+  // You can await here
+  
+  const {data}=await getAllProducts(ata)
+  setProduct(data)
+  }
+  // ...
 }
     const navigate =useNavigate()
     function handleProductPurchase(event){
@@ -87,35 +167,73 @@ const handleBrandSelect=(e)=>{
     const userData =localStorage.getItem("userId")
     const userInfo =localStorage.getItem("userInfo")
 
-    const removePet=(e)=>{
+    const removePet=async(e)=>{
       console.log(e);
       const index = petCatagoryy.indexOf(e);
     if (index > -1) { // only splice array when item is found
       petCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
       setpetCatagoryy(petCatagoryy)
       console.log(petCatagoryy);
+      const ata={
+        typeCatagoryy:typeCatagoryy,
+    
+        petCatagoryy:petCatagoryy,
+        brandCatagoryy:brandCatagoryy
+       }
+      
+      // You can await here
+      
+      const {data}=await getAllProducts(ata)
+      setProduct(data)
+      
+      // ...
     }
       
     }
   
-const removetype=(e)=>{
+const removetype=async(e)=>{
   console.log(e);
   const index = typeCatagoryy.indexOf(e);
 if (index > -1) { // only splice array when item is found
   typeCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
   settypeCatagoryy(typeCatagoryy)
   console.log(petCatagoryy);
+  const ata={
+    typeCatagoryy:typeCatagoryy,
+
+    petCatagoryy:petCatagoryy,
+    brandCatagoryy:brandCatagoryy
+   }
+  
+  // You can await here
+  
+  const {data}=await getAllProducts(ata)
+  setProduct(data)
+  
+  // ...
 }
 
 }
 
-const removebrand=(e)=>{
+const removebrand=async(e)=>{
   console.log(e);
   const index = brandCatagoryy.indexOf(e);
 if (index > -1) { // only splice array when item is found
   brandCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
   setbrandCatagoryy(brandCatagoryy)
-  console.log(petCatagoryy);
+  const ata={
+    typeCatagoryy:typeCatagoryy,
+
+    petCatagoryy:petCatagoryy,
+    brandCatagoryy:brandCatagoryy
+   }
+  
+  // You can await here
+  
+  const {data}=await getAllProducts(ata)
+  setProduct(data)
+  
+  // ...
 }
 }
      
@@ -145,7 +263,7 @@ if (index > -1) { // only splice array when item is found
         // ...
       }
       fetchData();
-    }, [params,petCatagoryy,typeCatagoryy,brandCatagoryy,removePet ,removetype,removebrand]); // Or [] if effect doesn't need props or state
+    }, [params,typeCatagoryy,petCatagoryy,brandCatagoryy]); // Or [] if effect doesn't need props or state
 
 
     // useEffect(() => {
@@ -249,7 +367,7 @@ const handleSearchInput=async(e)=>{
     console.log(data);
   
     setProduct(data)
-  //  setSearchText("")
+   setSearchText("")
    }else{
     const {data}=await getAdminProducts()
     setProduct(data)
@@ -512,9 +630,10 @@ const handleSearchInput=async(e)=>{
     <div className='flexit1'>
       <div style={{display:'flex'}}>
       <div><select  className='selectbox' 
+      
       onChange={handlePetSelect} 
       id="">
-      
+        <option value={params.id}>PET CATEGORY</option>
         <option value="DOG">DOG</option>
          <option value="CAT">CAT</option>
          <option value="HAMSTER">HAMSTER</option>
@@ -528,6 +647,7 @@ const handleSearchInput=async(e)=>{
       <div style={{marginLeft:'10px',width:"3rem"}}><select  
       onChange={handleTypeSelect} 
       className='selectbox' name="" id="">
+        <option value={params.type}>TYPE CATEGORY</option>
         <option value="FOOD">FOOD </option>
         <option value="TOY">TOY</option>
         <option value="ACCESSORIES">ACCESSORIES</option>
@@ -715,7 +835,7 @@ const handleSearchInput=async(e)=>{
 
   <select  className='inputbox' name='brandCategory' 
  onChange={handleBrandSelect} 
-   id="">
+   id="">                             <option value="SMARTY PET">BRANDS</option>
                                       <option value="SMARTY PET">SMARTY PET</option>
                                       <option value="LAL PET">LAL PET</option>
                                       <option value="DROOLS">DROOLS</option>
