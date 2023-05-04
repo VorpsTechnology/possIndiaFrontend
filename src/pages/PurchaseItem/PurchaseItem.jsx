@@ -255,7 +255,7 @@ function PurchaseItem() {
           <div style={{justifyContent:'left',display:'table',marginTop:'15px'}} className='flexlom'>
               <div align='left'><label htmlFor="">Booking for </label></div>
               <div>
-              <select className='nameinput2'onChange={handleChange} name="bookingType" id="">
+              <select className='Mobiinput' onChange={handleChange} name="bookingType" id="">
                 <option value="PETS BATHING">{params.id}</option>
                
               </select>
