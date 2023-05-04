@@ -57,7 +57,9 @@ function ProductPurchase() {
 
 for(var i = 0; i < str_array.length; i++) {
    // Trim the excess whitespace.
-   str_array[i] = str_array[i].replace(/^\s*/, "").replace(/\s*$/, "");
+   str_array[i] = str_array[i]
+   
+  //  str_array[i].replace(/^\s*/, "").replace(/\s*$/, "");
    // Add additional code here, such as:
 
    const url=new URL(str_array[i])  
