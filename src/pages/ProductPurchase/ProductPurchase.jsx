@@ -77,11 +77,10 @@ for(var i = 0; i < str_array.length; i++) {
           setPost(data)
           setPCategory(data.petCategory)
           setTCategory(data.typeCatagory)
-          console.log(data.uploadImages
-            )
+        
             
 
-          console.log(data);
+        
           fn(data)
           // ...
         }
@@ -94,13 +93,6 @@ for(var i = 0; i < str_array.length; i++) {
       }
      
   
-      // Or [] if effect doesn't need props or state
-    // const handelSetCategories = (cat) => {
-    //   console.log("hare", cat);
-    //   setCategory(cat);
-    //   // api call
-      
-    // };
     useEffect(() => {
       window.scrollTo(0, 0)
     }, [])

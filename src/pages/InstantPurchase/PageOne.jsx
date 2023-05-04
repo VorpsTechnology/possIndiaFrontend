@@ -117,7 +117,7 @@ setimages(arrz)
       const {data}=await getProduct(params.id)
  
       setPost(data)
-      console.log(data);
+
       fn(data)
       setState( State.getStatesOfCountry("IN"))
       setCity(City.getCitiesOfState("IN", stateCode))
@@ -158,7 +158,7 @@ setimages(arrz)
        DeliveryStatus:"PENDING",
        OrderStatus:"ORDERED"
      }
-     console.log(ata);
+
      const tata= await createOrder(ata)
      if(tata){
       openModal()
@@ -201,7 +201,7 @@ setimages(arrz)
         cod : 1
     }
 })
-console.log("resp",response);
+
 setEstimate(response)
  }
   
@@ -385,11 +385,11 @@ setEstimate(response)
                     
                     axios(config)
                     .then(function (response) {
-                      console.log("set",JSON.stringify(response.data));
+                    
                       setToken(JSON.stringify(response.data))
                     })
                     .catch(function (error) {
-                      console.log(error);
+                      console.log();
                     });
 
                     foo()

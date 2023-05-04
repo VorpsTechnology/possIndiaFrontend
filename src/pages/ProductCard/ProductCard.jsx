@@ -17,7 +17,7 @@ const ProductCard = ({typeCatagory,petCategory}) => {
     // const [products, setProduct] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   
     const handelSetCategories = (cat) => {
-      console.log("hare", cat);
+      
       setCategory(cat);
       // api call
       
@@ -41,15 +41,17 @@ const ProductCard = ({typeCatagory,petCategory}) => {
       async function fetchData() {
 
         const zata ={
-          petCategoryy:petCategory,
-          typeCatagoryy:typeCatagory
+          petCatagoryy:[petCategory],
+          typeCatagoryy:[typeCatagory],
+          brandCatagoryy:[]
+
         }
 
-        console.log("zata",zata);
+       
         // You can await here
         const {data}=await getAllProducts(zata)
         setProduct(data.splice(0,12))
-        console.log(data);
+      
         // ...
       }
       fetchData();
@@ -67,8 +69,7 @@ const ProductCard = ({typeCatagory,petCategory}) => {
     //     const {data}=await getWishlist(beta)
     //     setUsers(data)
     //     setFilteredUsers(data.Wishlist.products)
-    //     console.log(userData);
-    //     console.log(data.Wishlist.products);
+ 
     //     // ...
     //   }
     //   fetchData();
@@ -77,7 +78,7 @@ const ProductCard = ({typeCatagory,petCategory}) => {
     
       const images=[]
       var str_array =data.split(',');
-console.log("str",str_array);
+
 for(var i = 0; i < str_array.length; i++) {
 // Trim the excess whitespace.
 str_array[i] = str_array[i].replace(/^\s*/, "").replace(/\s*$/, "");
