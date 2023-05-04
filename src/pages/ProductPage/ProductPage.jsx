@@ -295,7 +295,7 @@ const url=new URL(str_array[i])
 
 
 
-images.push(url.searchParams.get('id'))
+// images.push(url.searchParams.get('id'))
 
 
 return `https://drive.google.com/uc?id=${images[0]}`

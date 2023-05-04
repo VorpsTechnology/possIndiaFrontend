@@ -107,7 +107,7 @@ const url=new URL(str_array[i])
 
 const arrz=images
 
-arrz.push(url.searchParams.get('id'))
+// arrz.push(url.searchParams.get('id'))
 setimages(arrz)
 
 }

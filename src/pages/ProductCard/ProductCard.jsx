@@ -81,7 +81,8 @@ const ProductCard = ({typeCatagory,petCategory}) => {
 
 for(var i = 0; i < str_array.length; i++) {
 // Trim the excess whitespace.
-str_array[i] = str_array[i].replace(/^\s*/, "").replace(/\s*$/, "");
+str_array[i] = str_array[i]
+//.replace(/^\s*/, "").replace(/\s*$/, "");
 // Add additional code here, such as:
 
 if(str_array[i]!==""){
@@ -89,7 +90,7 @@ const url=new URL(str_array[i])
 
 
 
-images.push(url.searchParams.get('id'))
+// images.push(url.searchParams.get('id'))
 
 
 return `https://drive.google.com/uc?id=${images[0]}`

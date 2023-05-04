@@ -66,7 +66,7 @@ for(var i = 0; i < str_array.length; i++) {
  
    const arrz=images
 
-   arrz.push(url.searchParams.get('id'))
+  //  arrz.push(url.searchParams.get('id'))
    setimages(arrz)
 
 }
