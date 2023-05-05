@@ -41,3 +41,85 @@
 
    
 }
+
+
+@media only screen and (min-width:700px) and (max-width:900px) { 
+    .MediaDEalcard{
+        display:none;
+    }
+    .PRoductimg img{
+        height: 200px;
+        
+    }
+    * {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+    
+    
+    #superdealcard {
+        border-radius: 11px;
+        width: 200px;
+       
+        height: 300px;
+    
+        background-color: #FFFFFF;
+    }
+    
+    .OurServiceSlider h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+       padding: 40px;
+    }
+    
+    #crdroes{
+        display: flex;
+        padding: 10px;
+    }
+    #Delasblock{
+        display:block;
+    }
+   
+}
+
+/* @media only screen and (min-width:540px) and (max-width:912px){
+    .MediaDEalcard{
+        display:none;
+    }
+    .PRoductimg img{
+        height: 200px;
+        
+    }
+    * {
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+    
+    
+    #superdealcard {
+        border-radius: 11px;
+        width: 200px;
+       
+        height: 300px;
+    
+        background-color: #FFFFFF;
+    }
+    
+    .OurServiceSlider h4 {
+        color: rgba(56, 43, 40, 1);
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+       padding: 40px;
+    }
+    
+    #crdroes{
+        display: flex;
+        padding: 10px;
+    }
+    #Delasblock{
+        display:block;
+    }
+} */

@@ -65,11 +65,11 @@
         display:block;
     }
 
-    .listst{
+    .liststmedia{
         text-align: left; 
-        height:650px
+        height:550px
     }
-    .listst li {
+    .liststmedia li {
         padding: 4px 4px 15px 4px;
         font-size: 10px;
     }
@@ -132,11 +132,11 @@
         height: 300px;
         
     }
-    .listst{
+    .liststmedia{
         text-align: left; 
-        height:650px
+        height:550px
     }
-    .listst li {
+    .liststmedia li {
         padding: 4px 4px 15px 4px;
         font-size: 10px;
     }
@@ -217,11 +217,11 @@
         display: inline;
         text-align: center;
     }
-    .listst{
+    .liststmedia{
         text-align: left; 
-        height:650px
+        height:550px
     }
-    .listst li {
+    .liststmedia li {
         padding: 4px 4px 15px 4px;
         font-size: 10px;
     }
@@ -289,15 +289,12 @@
     .MediaPrice{
         display: block;
     }
-    .PRoductimg img{
-        height: 300px;
-        
-    }
-    .listst{
+  
+    .liststmedia{
         text-align: left; 
-        height:650px
+        height:550px
     }
-    .listst li {
+    .liststmedia li {
         padding: 4px 4px 15px 4px;
         font-size: 10px;
     }
@@ -430,12 +427,12 @@
         display: inline;
         text-align: center;
     }
-    .listst{
+    .liststmedia{
         text-align: left; 
-        height:650px
+        height:550px
     }
-    .listst li {
-        padding: 4px 4px 15px 4px;
+    .liststmedia li {
+        padding: 4px 4px 20px 4px;
         font-size: 10px;
     }
     .listitems {

@@ -54,9 +54,9 @@ function OurPriceMedia() {
          <SwiperSlide >
         <div>
         <div className='card lg-shadow' id='cardPrice'>
-        <div align="center" className='headerbook' ><h2>Haircut & Styling</h2></div>
+        <div align="center" className='headerbook' ><h2>Haircut & Styling</h2></div> <br />
         {/* <div align="center" className='pricebook'> <h2>₹2499.00</h2> </div> */}
-        <div className='listst' style={{textAlign:'left'}} >
+        <div className='liststmedia' style={{textAlign:'left'}} >
         <ul  style={{listStyle:'none'}} >
         <li>
           <div style={{display:'flex'}}>
@@ -64,19 +64,24 @@ function OurPriceMedia() {
           <div style={{marginLeft:'20px'}}> <h5>Shaving</h5> </div>
           </div>
         </li>
+      <br />
         <li>
           <div style={{display:'flex'}}>
           <div><img className='ticksize' src={tick} alt="" /></div>
           <div style={{marginLeft:'20px'}}> <h5>Hairstyling</h5></div>
           </div>
         </li>
+        <br />
         <li>
+       
           <div style={{display:'flex'}}>
           <div><img className='ticksize' src={tick} alt="" /></div>
           <div style={{marginLeft:'20px'}}> <h5>Hairstyling
-          (Breed Specific)</h5> </div>
+          <br /> (Breed Specific)</h5> </div>
           </div>
         </li>
+        <br />
+
         <li>
           <div style={{display:'flex'}}>
           <div><img className='ticksize' src={tick} alt="" /></div>
@@ -84,6 +89,7 @@ function OurPriceMedia() {
            Face Trim</h5></div>
           </div>
         </li>
+        <br />
         <li>
           <div style={{display:'flex'}}>
           <div><img className='ticksize' src={tick} alt="" /></div>
@@ -91,6 +97,7 @@ function OurPriceMedia() {
            Fanny Trim</h5></div>
           </div>
         </li>
+        
           {/* <li><h4><img className='ticksize' src={tick} alt="" /><span style={{marginLeft:'20px'}} >Shaving</span></h4></li>
             <li><h4><img className='ticksize' src={tick} alt="" /><span style={{marginLeft:'20px'}} > Hairstyling</span></h4></li>
             <li><h4><img className='ticksize' src={tick} alt="" /><span style={{marginLeft:'20px'}} > Hairstyling(Breed Specific)</span></h4></li>

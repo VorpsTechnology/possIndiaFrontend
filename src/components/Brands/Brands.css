@@ -13,7 +13,8 @@
         }
         #desklop{
             display: block;
-           padding: 40px;
+           padding: 40px 0px 40px 0px;
+           background-color: white;
         }
        
             @-webkit-keyframes scroll {
@@ -64,10 +65,10 @@
             top: 0;
             }
             .slider .slide-track {
-            -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+            -webkit-animation: scroll 20s linear infinite;
+            animation: scroll 20s linear infinite;
             display: flex;
-            width: calc(250px * 14);
+            width: calc(250px * 8);
             }
             .slider .slide {
             height: auto;
@@ -86,10 +87,12 @@
 
         
         .img img{
-            width:350px
+            width:250px
         }
         #desklop{
             display: block;
+           padding: 40px 0px 40px 0px;
+           background-color: white;
         }
         
   }

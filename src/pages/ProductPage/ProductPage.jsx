@@ -4,10 +4,13 @@ import './ProductPage.css'
 import user from '../../assets/user.png'
 import shopingcart from '../../assets/shopingcart.png'
 import logo from '../../assets/logo.png'
+
 import filter from '../../assets/filter.png'
+import print from '../../assets/print.png'
 import posslogogif from "../../assets/posslogogif.gif"
 import { useEffect } from "react";
 import { getAdminProducts, getAllProducts, getbrandCategory, getpetCategory, gettypeCategory, searchInput } from "../../Api/ProductRequest.js";
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -626,7 +629,7 @@ const handleSearchInput=async(e)=>{
 {/* navbar ends here */}
   <div className='container-fluid' style={{display:"flex"}}>
 
-  <div className='flexco' style={{justifyContent:"space-around"}} >
+  <div className='flexco' style={{justifyContent:"space-between"}} >
     <div className='flexit1'>
       <div style={{display:'flex'}}>
       <div><select  className='selectbox' 
@@ -1021,38 +1024,43 @@ const handleSearchInput=async(e)=>{
 
   </div>
   
-  <div className='container'>
+  <div className='container-fluid'>
 
         <div align='center'  id='rowlock' className='row'>
     
             <div>
           <div className='container' id='productcontainer' >
-          <div align='center' id='procardlw'  className='row'>
+          <div align='center' id='procardlw'  className="row g-0">
     
             {products &&
             products.length > 0 &&
             products.map((ele) => (
               
-                <div  className='col-md-2'  id='kil'   >
+                <div  className='col-sm-4'  id='kil'   >
                 <div  id="Productcard30" className='card' >
             
                     <div className='Productimg' style={{borderRadius:'20px'}} align="center"  onClick={()=>{
                       navigate(`/ProductPurchase/${ele._id}`)
                     }} ><img src={src(ele.uploadImages)} alt=""  /></div>
                     
-                    <div  style={{paddingTop:'20px'}} align="center" >
-                        <b >{ele.name.slice(0,10)+'....'}</b>
-                        <h6 style={{paddingTop:'10px',fontSize:'15px'}}><s>₹ {ele.maxPrice} </s>  - <b>  ₹{ele.price}</b> </h6>
+                    <div  style={{paddingTop:'4px'}} align="center" >
+                    <p className='brand'>{ele.brandCategory}</p>
+                       <b><p style={{fontSize:'12px'}} >{ele.name.slice(0,30)+'....'}</p></b> 
+                        <h6 style={{paddingTop:'2px',fontSize:'15px'}}><s>₹ {ele.maxPrice} </s>  - <b>  ₹{ele.price}</b> </h6>
                     </div>
-                    <div style={{paddingTop:'10px',borderRadius:'20px'}} align="center">
+                    <div style={{paddingTop:'5px',borderRadius:'20px'}} align="center">
                     <button   className='button30' onClick={()=>{
                                 wishlist(ele)
-                    }} ><img style={{backgroundColor:'#FFFFFF',margin:'5px',}} src={ele.uploadImages} alt="" /><span style={{backgroundColor:'#FFFFFF'}}>Add to cart</span></button></div>
-                    <div style={{borderRadius:'20px',paddingTop:'10px',paddingBottom:'5px'}} align="center">
+                    }} ><img style={{backgroundColor:'#FFFFFF',margin:'5px',}} src={ele.uploadImages} alt="" /><span style={{backgroundColor:'#FFFFFF'}}>ADD TO CART</span></button></div>
+                    <div style={{borderRadius:'20px',paddingTop:'5px',paddingBottom:'5px'}} align="center">
                     <button   className='button30' style={{backgroundColor:'#F2C879',color:'black'}} onClick={()=>{
                       navigate(`/InstantPurchase/${ele._id}/1`)
-                    }}><span >Buy Now</span></button></div>
+                    }}><span >
+                  <img style={{width:'20px',height:'20px'}} src={print}/>
+                    
+                    </span> BUY NOW</button></div>
                     </div>
+
                     
                 </div>
                ))}

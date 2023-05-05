@@ -23,8 +23,8 @@ function handleProduct(data){
   return (
     
     <div className='MediaNavbar'>
-  <div style={{display:'flex',justifyContent:'space-between',width:'100%',padding:'5px'}}>
-    <div style={{justifyContent:'left',paddingLeft:'7px'}}>
+  <div style={{display:'flex',justifyContent:'space-between',width:'100%',padding:'10px 5px 5px 5px'}}>
+    <div style={{justifyContent:'left'}}>
 
     <>
    <img onClick={()=>{
@@ -36,7 +36,7 @@ function handleProduct(data){
     <form  className='search-container' >
      
       
-      <p> <input  type="text"  style={{width:'70%'}} placeholder="Search.." name="search" />  </p>
+      <p> <input  type="text"  style={{width:'80%'}} placeholder="Search.." name="search" />  </p>
       
     </form>
     </div>
@@ -54,7 +54,7 @@ function handleProduct(data){
   </button>
   <li className={isMobile?'nav-links-mobile':'nav-links'}  onClick={()=> setIsMobile(false)}>
         
-       <ul  style={{display:'flex',textDecoration:'none',padding:'5px'}}>
+       <ul  style={{display:'flex',textDecoration:'none',padding:'10px'}}>
         <li style={{listStyle:'none'}}><Link to="/login" className='home'><img src={shopingcart} style={{width:"20px"}} alt="" />
           </Link>
         </li>

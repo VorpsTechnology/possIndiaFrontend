@@ -1,11 +1,30 @@
 import React  from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 
 import './WhyUs.css'
 
 function WhyUs() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
 
   return (
@@ -32,34 +51,33 @@ function WhyUs() {
        
         </div>
         <div className='videodiv' >
-        <Carousel>
-                <div>
-                <video  height="400" controls autoplay >
+        <Carousel responsive={responsive}>
+            <div>
+            <video  height="400" style={{width:'100%'}}  controls autoplay >
                     <source src='Videos/possk.mp4' />
                     " Your browser does not support the video tag."
                 </video> 
-                </div>
-                <div>
-                <video  height="400" controls autoplay >
+            </div>
+            <div>
+            <video  height="400" style={{width:'100%'}} controls  >
                     <source src='Videos/possv.mp4' />
                     " Your browser does not support the video tag."
                 </video> 
-                </div>
-                <div>
-                <video  height="400" controls autoplay >
+            </div>
+            <div>
+            <video  height="400" style={{width:'100%'}} controls  >
                     <source src='Videos/possc.mp4' />
                     " Your browser does not support the video tag."
                 </video> 
-                </div>
-                <div>
-                <video  height="400" controls autoplay >
+            </div>
+            <div>
+            <video  height="400" style={{width:'100%'}} controls autoplay >
                     <source src='Videos/possn.mp4' />
                     " Your browser does not support the video tag."
                 </video> 
-                </div>
-
-              
-            </Carousel>
+            </div>
+          </Carousel>;
+        
         {/* <video  height="400" controls style={{width:'650px'}}>
               <source src='Videos/possk.mp4' />
               " Your browser does not support the video tag."

@@ -33,7 +33,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={sheba}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -41,7 +41,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={origen}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -49,7 +49,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={chukit}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -57,7 +57,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={whiskas}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -65,7 +65,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={basil}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -73,7 +73,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={barkbuter}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -81,7 +81,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={royal}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -89,7 +89,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={mutt}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -97,7 +97,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={trixie}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -105,7 +105,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={iams}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -113,7 +113,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={mpets}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -121,7 +121,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={drools}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -129,7 +129,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={fidele}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
@@ -137,7 +137,7 @@ const Brands = () => {
     <div className="slide">
       <img
         src={viva}
-        width="100px"
+       width="100px"
        height="100px"
         alt=""
       />
