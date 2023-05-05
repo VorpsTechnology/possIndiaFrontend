@@ -6,16 +6,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useNavigate }  from 'react-router-dom';
 import './OurPricesMedia.css'
-
 import {EffectCoverflow,Pagination,Navigation} from 'swiper'
 import tick from '../../assets/tick.png'
 
 
 function OurPriceMedia() {
     const navigate = useNavigate();
-
     function handlebook(event) {
-  
       navigate('/PurchaseItem');
     }
   return (
@@ -40,7 +37,7 @@ function OurPriceMedia() {
              modifier: 1.5,
              slideShadows: false,
              centeredSlides: true,
-             loop: false,
+             loop: true,
              paginationClickable: true,
              pagination: '.swiper-pagination',
            }
@@ -53,16 +50,13 @@ function OurPriceMedia() {
            clickable: true,
          }}
          modules={[EffectCoverflow, Pagination, Navigation]}
-       
         >
-       
-         
          <SwiperSlide >
-        <div >
-        <div className='card lg-shadow' id='cardPrice' >
+        <div>
+        <div className='card lg-shadow' id='cardPrice'>
         <div align="center" className='headerbook' ><h2>Haircut & Styling</h2></div>
         {/* <div align="center" className='pricebook'> <h2>₹2499.00</h2> </div> */}
-        <div style={{textAlign:'left'}} >
+        <div className='listst' style={{textAlign:'left'}} >
         <ul  style={{listStyle:'none'}} >
         <li>
           <div style={{display:'flex'}}>
