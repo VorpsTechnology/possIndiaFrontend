@@ -208,7 +208,8 @@ setEstimate(response)
   return (
     <>
       <form action="" onSubmit={order}>
-   {visible ?<>
+   {visible ?
+   <>
     
     <div>
     <div className='per'><img src={per} alt="" /></div>
@@ -220,11 +221,8 @@ setEstimate(response)
            <div style={{display:'inline'}}>
            <div align='center'><img src={
                             images.length>0 ?
-                            
-                            
-                            "https://drive.google.com/uc?id="+ images[1]:"no image"} style={{width:"15rem"}} alt="" /></div>
-        
-           
+                            "https://drive.google.com/uc?id="+ images[1]:"no image"} style={{width:"15rem"}} alt="" />
+            </div>
            </div>
            <div>
                         <hr />
@@ -329,39 +327,43 @@ setEstimate(response)
           </div>
         </div>
       
-                 
-        
-   
-       
-      
-      
         </div>
 
       
         <div className='flex-item-right' id='leftslide'>
             <div  className='card200'>
-                <div style={{display:'flex'}}>
-                <div className='imgpro'><img style={{width:"13rem",height:"15rem",margin:"1rem"}} src={
+                <div >
+                <div ><img style={{width:"19rem",height:"19rem"}} src={
                             images.length>0 ?
                             
                             
-                            "https://drive.google.com/uc?id="+ images[1]:"no image"} alt="" /></div>
-                <div style={{marginTop:'50px'}}>
-                   <div  className='card' id='cardid' >
-                        <div align="center"><h6 style={{padding:'10px',fontSize:'15px',fontWeight:'700'}}>{post.name}</h6></div>
+                            "https://drive.google.com/uc?id="+ images[1]:"no image"}  /></div>
+               
+                <div >
+                <hr />
+                <div  className='card'>
+                <h6 style={{padding:'10px',fontSize:'15px',fontWeight:'700'}}>{post.name}</h6>
+                </div>
+                
+                
+                   {/* <div style={{marginTop:'20px'}}>
+                        
                         <div align="center"  style={{display:"flex",justifyContent:'space-between'}}>
                             <div style={{padding:'0px 20px 20px 20px'}}> <h6 style={{fontSize:'15px'}}>Price</h6> </div>
                             <div style={{padding:'0px 20px 20px 0px'}}> <h6 style={{fontSize:'15px'}}><s>  ₹{post.maxPrice}</s> {post.price}</h6></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 </div>
                 <hr />
-                <h4 style={{marginLeft:"-16rem",marginTop:"1rem"}}>TOTAL PRICE</h4>
-                <div align="right" >
+                <div style={{marginTop:'20px'}}>
+                <h4 className='priceheado'>TOTAL PRICE ₹{post.price} </h4>
+                </div>
+                
+                {/* <div align="right" >
                  
-                    <div className='card' style={{marginTop:"-3rem"}} id='pro'><h4 style={{fontWeight:'bolder',color:'rgb(0,0,0,1)',fontSize:'25px'}}>₹{post.price}</h4></div>
-                   </div>
+                    <div className='card' style={{marginTop:"-3rem"}} id='pro'><h4 style={{fontWeight:'bolder',color:'rgb(0,0,0,1)',fontSize:'25px'}}></h4></div>
+                   </div> */}
               
                 
             </div>
@@ -507,11 +509,11 @@ setEstimate(response)
                 
                 <div align='center' className='container'>
                 <div id='cardbig'>
-                      <div><img src={
+                      <div><img style={{width:'14rem'}} src={
                             images.length>0 ?
                             
                             
-                            "https://drive.google.com/uc?id="+ images[1]:"no image"} style={{width:"15rem"}} alt="" /></div>
+                            "https://drive.google.com/uc?id="+ images[1]:"no image"}  alt="" /></div>
                       <div>
                         <hr />
                       <div className='container'>
@@ -576,46 +578,47 @@ setEstimate(response)
         </div>
         <div   className='flexright0'>
             <div  className='card' id='card20'>
-                
-              <div className='container'>
-              <div style={{display:'flex',margin:'20px',justifyContent:'space-between'}}>
-                    <div>product Subtotal :</div>
-                    <div> {post.price}</div>
-                </div>
-                <div style={{display:'flex',margin:'20px',justifyContent:'space-between'}}>
-                    <div>Shipping Charge :Fixed</div>
-                    <div>₹ {shippingCost}</div>
-                </div>
-                <div >
-                    <div align='center'><button className='totalbutton'>Total :₹ {post.price}</button></div>
-                    
-                </div>
-              </div>
-              <hr />
               <div className='container'>
               <div id='cardbig'>
                     <div><img src={
                             images.length>0 ?
                             
                             
-                            "https://drive.google.com/uc?id="+ images[1]:"no image"} style={{width:"13rem",height:"13rem"}} alt="" /></div>
+                            "https://drive.google.com/uc?id="+ images[1]:"no image"} style={{width:"19rem",height:"19rem"}} alt="" /></div>
                     <div>
-                    <div   className='card' id='cardotherid' style={{width:'150px',height:'10rem',marginTop:'30px'}}>
+                    <hr />
+                    <div   className='card' id='cardotherid' >
                         <div align="center"><h6 style={{padding:'10px',fontSize:'15px',fontWeight:'700'}}>{post.name}</h6></div>
-                        <div align="center"  style={{display:"flex",justifyContent:'space-between'}}>
+                       
+                    </div>
+                    <hr />
+                    {/* <div align="center"  >
                             <div style={{padding:'0px 20px 20px 20px'}}>Price</div>
                             <div style={{padding:'0px 20px 20px 0px'}}>₹ {post.price}</div>
-                        </div>
-                    </div>
+                        </div> */}
                     </div>
                 </div>
               </div>
-              <hr />
+           
               <div className='container'>
+              <div style={{display:'flex',margin:'20px',justifyContent:'space-between'}}>
+                    <div>product Subtotal :</div>
+                    <div> {post.price}</div>
+                </div>
+                <div style={{display:'flex',margin:'20px',justifyContent:'space-between'}}>
+                    <div>Shipping Charge </div>
+                    <div>₹ {shippingCost}</div>
+                </div>
+                <div >
+                    <div align='center'><button className='priceheado'>Total :₹{post.price + shippingCost}</button></div>
+                    
+                </div>
+              </div>
+              {/* <div className='container'>
                 <div className='bootonbutton'>
                   <div className='procard'><button>Total  ₹{post.price + shippingCost}</button></div>
                 </div>
-              </div>
+              </div> */}
               
             </div>
 

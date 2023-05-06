@@ -50,7 +50,7 @@ function WhyUs() {
        
        
         </div>
-        <div className='videodiv' >
+        <div className='videodiv' style={{backgroundColor:'white'}} >
         <Carousel responsive={responsive}>
             <div>
             <video  height="400" style={{width:'100%'}}  controls autoplay >

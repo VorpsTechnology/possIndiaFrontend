@@ -13,7 +13,7 @@ function Payment() {
 <>
 <div className='container-fluid'>
 <div className='flying'><img style={{height:'300px'}} src={flying} alt="" /></div> 
-    <div className='flexcontent4' style={{marginTop:'40px'}}>
+    <div className='flexcontent4' >
     <div   className='formobile'>
     <div className='flexleft0'>
       <div id='lomnk' className='container'>
@@ -84,7 +84,7 @@ function Payment() {
                     <div>Rates</div>
                 </div>
                 <div style={{display:'flex',margin:'20px',justifyContent:'space-between'}}>
-                    <div>Shipping Charge :Fixed</div>
+                    <div>Shipping Charge</div>
                     <div>Rates</div>
                 </div>
                 <div >
@@ -94,10 +94,10 @@ function Payment() {
               </div>
               <hr />
               <div className='container'>
-              <div id='cardbig'>
+              <div >
                     <div><img src={product} alt="" /></div>
                     <div>
-                    <div   className='card' id='cardotherid' style={{width:'150px',height:'100px',marginTop:'30px'}}>
+                    <div   className='card' id='cardotherid' >
                         <div align="center"><h6 style={{padding:'10px',fontSize:'15px',fontWeight:'700'}}>Product Name</h6></div>
                         <div align="center"  style={{display:"flex",justifyContent:'space-between'}}>
                             <div style={{padding:'0px 20px 20px 20px'}}>Price</div>
@@ -108,11 +108,11 @@ function Payment() {
                 </div>
               </div>
               <hr />
-              <div className='container'>
+              {/* <div className='container'>
                 <div className='bootonbutton'>
                   <div className='procard'><button>₹54.3</button></div>
                 </div>
-              </div>
+              </div> */}
            
             </div>
         </div>

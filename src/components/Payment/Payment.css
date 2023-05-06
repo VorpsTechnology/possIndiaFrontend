@@ -24,6 +24,7 @@
 .flexcontent4 {
     display: flex;
     justify-content: space-between;
+    margin: 40px 100px 40px 100px;
     
 }
 
@@ -53,16 +54,13 @@
     box-sizing: border-box;
     position: absolute;
     width: 439px;
-    height: 550px;
- 
+    height: auto;
+   right:100px;
   display: block;
     background: #F4F7EE;
     border: 3px solid #F4F7EE;
     border-radius: 25px;
 
-
-
-   left: 876px;
 }
 
 .buttonpay {
@@ -86,8 +84,8 @@
 }
 
 #cardotherid {
-    width: 234px;
-    height: 149px;
+    width: auto;
+    height: auto;
     background: #F4F4F4;
     border-radius: 7px;
 }
@@ -125,14 +123,14 @@
 .flying  {
   
 float: right;
-transform: translateY(625px);
+transform: translateY(500px);
 bottom:0px;
 display: block;
 
 }
 
 #cardbig{
-  display:flex;justify-content:space-between;
+  display:inline;justify-content:space-between;
 }
 
 .bootonbutton{
@@ -381,4 +379,146 @@ justify-content: right;
              border-radius: 25px;
          
          }
+}
+
+@media only screen and (min-width: 650px) and (max-width:912px){
+      #lomnk{
+            display: block;
+        }
+        .formobile{
+            display: block;
+        }
+    
+        .cripimg{
+            display: block;
+        }
+    
+        #Mediadb{
+            display: block;
+        }
+        .cripimg img{
+            display: block; 
+         }
+    
+         .kiu img{
+            display: none;
+            justify-content: right;
+            display: block;
+         }
+    
+         
+    
+        .umi{
+            display: block;   
+        }
+    
+        .umi img{
+            display: block; 
+            justify-content: left;  
+        }
+    
+        #carflok{
+            width:150px;
+            justify-content: center;
+            padding: 20px;
+        }
+    
+        .cripimg img{
+    justify-content: right;
+        }
+      
+        #cardbig{
+            display:inline;justify-content:center;
+          }
+          .bootonbutton{
+            float:center;
+          }
+        .flying  {
+      
+            display: none;
+            
+            }
+            #paycontainer2{
+                margin:10px 10px 10px 0px;
+                justify-content: center;
+                text-align: center;
+                }
+    
+            .procard button {
+                width: 150px;
+                height: 70px;
+                border-color: transparent;
+                border-radius: 20px;
+            }
+            
+           
+            
+            #card20 {
+              display: none;
+             
+            }
+            #cardflow{
+                background: #F4F7EE;
+                border: 3px solid #F4F7EE;
+                border-radius: 25px;
+                text-align: center; 
+                width: 300px;
+                
+            }
+            .headingpay{
+                justify-content: center;
+                text-align: center;
+            }
+            
+    
+            .flexcontent4{
+                justify-content: center;
+                display: inline;
+            }
+            .flexleft4{
+                justify-content: center;
+            }
+    
+            .flexright0{
+                justify-content: center;
+           
+    
+                
+            }
+            #card10 {
+                width: auto;
+                height: 142px;
+                margin:40px 40px 40px 40px;
+                box-sizing: border-box;
+                background: #FFFFFF;
+                border-radius: 13px;
+                padding: 40px;
+               
+            }
+    
+            #card50{
+               
+               width: auto;
+                height: auto;
+             
+            
+                background: #F4F7EE;
+                border: 3px solid #F4F7EE;
+                border-radius: 25px;
+            
+            }
+            .cssbtn{
+                justify-content: center;
+                text-align: center;
+                margin: 0px;
+            }
+            #paycards2{
+                width:auto;
+            }
+         
+        
+                .paymentgatway2 {
+                    padding: 20px
+                }
+       
 }
