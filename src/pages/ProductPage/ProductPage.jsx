@@ -91,6 +91,7 @@ const [loading,setLoading]=useState(false)
   if(petCatagoryy.includes(e.target.value)){
     return
   }else{
+    
     setLoading(true)
     const beta=[...petCatagoryy,e.target.value]
    
@@ -366,9 +367,19 @@ const wishlist=async(data)=>{
 
  const  handleProduct=async(dataz)=>{
   setLoading(true)
-const type=dataz.typeCatagoryy?[dataz.typeCatagoryy]:[]
+const type=dataz.typeCatagoryy ?[dataz.typeCatagoryy]:[]
 const pet=dataz.petCategoryy?[dataz.petCategoryy]:[]
 
+if(type.length>0 && pet.length>0){
+  setpetCatagoryy(pet)
+  settypeCatagoryy(type)
+  
+  navigate(`/ProductPage/${dataz.petCategoryy}/${dataz.typeCatagoryy}`)}
+ 
+  else if(pet.length>0){
+    setpetCatagoryy(pet)
+    settypeCatagoryy([])
+    
   const ata={
     typeCatagoryy:type,
 
@@ -381,6 +392,7 @@ const pet=dataz.petCategoryy?[dataz.petCategoryy]:[]
   const {data}=await getAllProducts(ata)
   setLoading(false)
   setProduct(data)
+ }
   }
 
   function handleLogin(event){
@@ -1419,12 +1431,12 @@ const handleSearchInput=async(e)=>{
     
             <div>
           <div className='container' id='productcontainer' >
-          <div  >
+         <div >
+         <div  style={{width:"4rem"}} >
  
  <Circles
   height="80"
-  marginLeft="auto"
-  marginRight="auto"
+ 
   width="80"
   color="#F3CA6D"
   ariaLabel="circles-loading"
@@ -1435,6 +1447,7 @@ const handleSearchInput=async(e)=>{
 
           
           </div>
+         </div>
           {loading?<></>:<div align='center' id='procardlw'  className="row g-0">
     
     {products &&
