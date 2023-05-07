@@ -20,9 +20,9 @@ function Navbar() {
 
  const userInfo=localStorage.getItem("userInfo")
 const handleSearch=()=>{
-  if(userInfo){
+
     navigate("/ProductPage/DOG/FOOD")
-  }
+ 
 }
  function handleProduct(data){
   
@@ -238,9 +238,9 @@ const handleSearch=()=>{
            <div > 
             <input 
           
-             onInput={()=>{
+             onClick={
             handleSearch()
-           }}  style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="search" placeholder='Search Products Here' aria-label="Search" /><span>
+           }  style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="search" placeholder='Search Products Here' aria-label="Search" /><span>
 </span>
 </div>
           </form>
