@@ -41,7 +41,7 @@ function handleProduct(data){
      
       
      <div> <input 
-             onClick={()=>{
+             onInput={()=>{
             handleSearch()
            }}  type="text"  style={{width:'80%'}} placeholder="Search.." name="search" />  
       <span> <button type="submit" style={{marginLeft:"5px",backgroundColor:'transparent',borderColor:'transparent',marginLeft:"-1rem"}}><i class="fa fa-search" aria-hidden="true"></i></button>

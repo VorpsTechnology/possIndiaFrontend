@@ -238,7 +238,7 @@ const handleSearch=()=>{
            <div > 
             <input 
           
-             onClick={()=>{
+             onInput={()=>{
             handleSearch()
            }}  style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="search" placeholder='Search Products Here' aria-label="Search" /><span>
 </span>
