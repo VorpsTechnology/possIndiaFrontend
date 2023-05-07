@@ -1438,7 +1438,7 @@ const handleSearchInput=async(e)=>{
   height="80"
  
   width="80"
-  color="#F3CA6D"
+  color="#1BB5C0"
   ariaLabel="circles-loading"
   wrapperStyle={{}}
   wrapperClass=""
