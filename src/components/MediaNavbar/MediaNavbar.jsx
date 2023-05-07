@@ -12,9 +12,9 @@ const  [isMobile,setIsMobile] = useState(false);
 const navigate = useNavigate();
 const userInfo=localStorage.getItem("userInfo")
 const handleSearch=()=>{
-  if(userInfo){
+ 
     navigate("/ProductPage/DOG/FOOD")
-  }
+
 }
 function handleProduct(data){
  
