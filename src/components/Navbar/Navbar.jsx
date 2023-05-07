@@ -237,10 +237,8 @@ const handleSearch=()=>{
           <form id='serachbar' className="form-inline my-2 my-lg-0">
            <div > 
             <input 
-          
-             onClick={
-            handleSearch()
-           }  style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="search" placeholder='Search Products Here' aria-label="Search" /><span>
+          onClick={()=>{handleSearch()}}
+          style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="search" placeholder='Search Products Here' aria-label="Search" /><span>
 </span>
 </div>
           </form>
