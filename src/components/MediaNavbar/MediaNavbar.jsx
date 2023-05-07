@@ -41,6 +41,8 @@ function handleProduct(data){
      
       
      <div> <input 
+             onClick={handleSearch}
+             onChange={handleSearch}
              onInput={
             handleSearch
           }  type="text"  style={{width:'80%'}} placeholder="Search.." name="search" />  
