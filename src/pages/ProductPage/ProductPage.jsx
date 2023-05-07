@@ -1445,9 +1445,11 @@ const handleSearchInput=async(e)=>{
 
         <div  id="Productcard30" className='card' >
     
-            <div className='Productimg' style={{borderRadius:'20px'}} align="center"  onClick={()=>{
+            <div className='Productimg' style={{borderRadius:'20px'}} align="center"   >
+              <img onClick={()=>{
               navigate(`/ProductPurchase/${ele._id}`)
-            }} ><img src={src(ele.uploadImages)} alt=""  /></div>
+            }}
+            src={src(ele.uploadImages)} alt=""  /></div>
             
             <div  style={{paddingTop:'4px'}} align="center" >
             <p className='brand'>{ele.brandCategory}</p>
