@@ -1160,7 +1160,7 @@ const handleSearchInput=async(e)=>{
         </li>
         <li>
           <a onClick={()=>{
-            //handlepetCategory("FISH")
+          handlePet("FISH")
           }}>Fish</a>
         </li>
         <li>
