@@ -1,6 +1,6 @@
 #card10 {
     width: 500px;
-    height: 142px;
+    height: auto;
   margin: 20px 20px 0px 50px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -24,7 +24,7 @@
 .flexcontent4 {
     display: flex;
     justify-content: space-between;
-    margin: 40px 100px 40px 100px;
+    margin:40px 100px 40px 50px; 
     
 }
 
@@ -55,7 +55,7 @@
     position: absolute;
     width: 439px;
     height: auto;
-   right:100px;
+   right:120px;
   display: block;
     background: #F4F7EE;
     border: 3px solid #F4F7EE;
@@ -123,7 +123,7 @@
 .flying  {
   
 float: right;
-transform: translateY(500px);
+transform: translateY(550px);
 bottom:0px;
 display: block;
 
@@ -264,12 +264,12 @@ justify-content: right;
         }
         #card10 {
             width: auto;
-            height: 142px;
+            height: auto;
             margin:40px 40px 40px 40px;
             box-sizing: border-box;
             background: #FFFFFF;
             border-radius: 13px;
-            padding: 40px;
+            padding: 20px;
            
         }
 
@@ -327,7 +327,7 @@ justify-content: right;
     }
     #card10 {
         width: auto;
-        height: 100px;
+        height: auto;
         margin:20px 20px 20px 20px;
         box-sizing: border-box;
         background: #FFFFFF;
@@ -487,7 +487,7 @@ justify-content: right;
             }
             #card10 {
                 width: auto;
-                height: 142px;
+                height: auto;
                 margin:40px 40px 40px 40px;
                 box-sizing: border-box;
                 background: #FFFFFF;

@@ -18,9 +18,6 @@ function Payment() {
     <div className='flexleft0'>
       <div id='lomnk' className='container'>
     <div   className='card' id='card50'>
-                
-                
-                
                 <div align='center' className='container'>
                 <div id='cardbig'>
                       <div><img src={product} alt="" /></div>

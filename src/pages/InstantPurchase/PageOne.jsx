@@ -592,10 +592,7 @@ setEstimate(response)
                        
                     </div>
                     <hr />
-                    {/* <div align="center"  >
-                            <div style={{padding:'0px 20px 20px 20px'}}>Price</div>
-                            <div style={{padding:'0px 20px 20px 0px'}}>₹ {post.price}</div>
-                        </div> */}
+                    
                     </div>
                 </div>
               </div>
@@ -614,11 +611,7 @@ setEstimate(response)
                     
                 </div>
               </div>
-              {/* <div className='container'>
-                <div className='bootonbutton'>
-                  <div className='procard'><button>Total  ₹{post.price + shippingCost}</button></div>
-                </div>
-              </div> */}
+             
               
             </div>
 

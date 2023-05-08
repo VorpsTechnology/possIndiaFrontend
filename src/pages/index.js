@@ -17,6 +17,7 @@ import MediaNavbar from '../components/MediaNavbar/MediaNavbar';
 import DogCatogriesMedia from '../components/DogCatogries/DogCatogriesMedia';
 import CatCatogriesMedia from '../components/CatCatogries/CatCatogriesMedia';
 
+import MediaImageSlider from '../components/ImageSlider/MediaImageSlider'
 import MediaDealCard from '../components/MediaDealCard/MediaDealCard';
 // import CardCarasouel from '../components/CardCarasouel/CardCarasouel'
 import OurPricesMedia from '../components/OurPrices/OurPricesMedia'
@@ -30,6 +31,7 @@ const Home = () => {
     <MediaNavbar />
     <Navbar />
     <ImageSlider />
+    <MediaImageSlider />
     <br />
     
     <SuperDeals />

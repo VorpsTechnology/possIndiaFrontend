@@ -18,7 +18,7 @@ function OurPriceMedia() {
   return (
     <>
  
-    <div className='MediaPrice' >
+    <div className='MediaPrice' id='MediaPriceContainer' >
       <div align='center' className='container-fluid' style={{paddingTop:'20px',paddingBottom:'40px'}} >
 
         {/* <div align='center' className='servicesheader'><h2>Subtext here--</h2> </div> */}
