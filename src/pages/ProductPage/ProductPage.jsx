@@ -12,6 +12,9 @@ import { useEffect } from "react";
 import { getAdminProducts, getAllProducts, getbrandCategory, getpetCategory, gettypeCategory, searchInput } from "../../Api/ProductRequest.js";
 
 
+import { Circles } from  'react-loader-spinner'
+
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 import {Footer} from '../../components/Footer/Footer'
@@ -27,10 +30,11 @@ const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
+  const  [isMobile,setIsMobile] = useState(false);
 const[petCatagoryy,setpetCatagoryy]=useState([params.id])
 const[typeCatagoryy,settypeCatagoryy]=useState([params.type])
 const[brandCatagoryy,setbrandCatagoryy]=useState([])
+const [loading,setLoading]=useState(false)
 
     const [category, setCategory] = useState("");
     // const [products, setProduct] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
@@ -40,6 +44,7 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
       return
     }else{
     const beta=[...petCatagoryy,e]
+    setLoading(true)
     setpetCatagoryy(beta)
     const ata={
       typeCatagoryy:typeCatagoryy,
@@ -51,6 +56,7 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
     // You can await here
     
     const {data}=await getAllProducts(ata)
+    setLoading(false)
     setProduct(data)
     }
     // ...
@@ -60,6 +66,7 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
   if(typeCatagoryy.includes(e)){
     return
   }else{
+    setLoading(true)
   const beta=[...typeCatagoryy,e]
   settypeCatagoryy(beta)
   const ata={
@@ -72,6 +79,7 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
   // You can await here
   
   const {data}=await getAllProducts(ata)
+  setLoading(false)
   setProduct(data)
  }
   // ...
@@ -83,6 +91,8 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
   if(petCatagoryy.includes(e.target.value)){
     return
   }else{
+    
+    setLoading(true)
     const beta=[...petCatagoryy,e.target.value]
    
     setpetCatagoryy(beta)
@@ -96,6 +106,7 @@ const[brandCatagoryy,setbrandCatagoryy]=useState([])
     // You can await here
     
     const {data}=await getAllProducts(ata)
+    setLoading(false)
     setProduct(data)
  }
     // ...
@@ -106,6 +117,7 @@ const handleTypeSelect=async(e)=>{
   if(typeCatagoryy.includes(e.target.value)){
     return
   }else{
+    setLoading(true)
     const beta=[...typeCatagoryy,e.target.value]
     settypeCatagoryy(beta)
     const ata={
@@ -118,6 +130,7 @@ const handleTypeSelect=async(e)=>{
     // You can await here
     
     const {data}=await getAllProducts(ata)
+    setLoading(false)
     setProduct(data)
   
     // ...
@@ -128,6 +141,7 @@ const handleBrandSelect=async(e)=>{
   if(brandCatagoryy.includes(e.target.value)){
     return
   }else{
+    setLoading(true)
   const beta=[...brandCatagoryy,e.target.value]
   setbrandCatagoryy(beta)
   const ata={
@@ -140,6 +154,7 @@ const handleBrandSelect=async(e)=>{
   // You can await here
   
   const {data}=await getAllProducts(ata)
+  setLoading(false)
   setProduct(data)
   }
   // ...
@@ -174,6 +189,7 @@ const handleBrandSelect=async(e)=>{
       console.log(e);
       const index = petCatagoryy.indexOf(e);
     if (index > -1) { // only splice array when item is found
+      setLoading(true)
       petCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
       setpetCatagoryy(petCatagoryy)
       console.log(petCatagoryy);
@@ -187,6 +203,7 @@ const handleBrandSelect=async(e)=>{
       // You can await here
       
       const {data}=await getAllProducts(ata)
+      setLoading(false)
       setProduct(data)
       
       // ...
@@ -197,7 +214,9 @@ const handleBrandSelect=async(e)=>{
 const removetype=async(e)=>{
   console.log(e);
   const index = typeCatagoryy.indexOf(e);
+
 if (index > -1) { // only splice array when item is found
+  setLoading(true)
   typeCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
   settypeCatagoryy(typeCatagoryy)
   console.log(petCatagoryy);
@@ -211,6 +230,7 @@ if (index > -1) { // only splice array when item is found
   // You can await here
   
   const {data}=await getAllProducts(ata)
+  setLoading(false)
   setProduct(data)
   
   // ...
@@ -222,6 +242,7 @@ const removebrand=async(e)=>{
   console.log(e);
   const index = brandCatagoryy.indexOf(e);
 if (index > -1) { // only splice array when item is found
+  setLoading(true)
   brandCatagoryy.splice(index, 1); // 2nd parameter means remove one item only
   setbrandCatagoryy(brandCatagoryy)
   const ata={
@@ -234,6 +255,7 @@ if (index > -1) { // only splice array when item is found
   // You can await here
   
   const {data}=await getAllProducts(ata)
+  setLoading(false)
   setProduct(data)
   
   // ...
@@ -249,7 +271,7 @@ if (index > -1) { // only splice array when item is found
   
       async function fetchData() {
       
-        
+        setLoading(true)
         
         const ata={
           typeCatagoryy:typeCatagoryy,
@@ -261,6 +283,7 @@ if (index > -1) { // only splice array when item is found
         // You can await here
         
         const {data}=await getAllProducts(ata)
+        setLoading(false)
         setProduct(data)
         
         // ...
@@ -342,10 +365,34 @@ const wishlist=async(data)=>{
 
 
 
- function handleProduct(data){
+ const  handleProduct=async(dataz)=>{
+  setLoading(true)
+const type=dataz.typeCatagoryy ?[dataz.typeCatagoryy]:[]
+const pet=dataz.petCategoryy?[dataz.petCategoryy]:[]
 
-  console.log(data);
-  navigate(`/ProductPage/${data.petCategoryy}/${data.typeCatagoryy}`);
+if(type.length>0 && pet.length>0){
+  setpetCatagoryy(pet)
+  settypeCatagoryy(type)
+  
+  navigate(`/ProductPage/${dataz.petCategoryy}/${dataz.typeCatagoryy}`)}
+ 
+  else if(pet.length>0){
+    setpetCatagoryy(pet)
+    settypeCatagoryy([])
+    
+  const ata={
+    typeCatagoryy:type,
+
+    petCatagoryy:pet,
+    brandCatagoryy:[]
+   }
+  
+  // You can await here
+  
+  const {data}=await getAllProducts(ata)
+  setLoading(false)
+  setProduct(data)
+ }
   }
 
   function handleLogin(event){
@@ -361,6 +408,7 @@ const handleChange = (e) => {
 
 console.log("srtxt",searchText);
 const handleSearchInput=async(e)=>{
+  setLoading(true)
   e.preventDefault();
   const ata= {search:searchText}
    if(searchText!==""){
@@ -368,11 +416,12 @@ const handleSearchInput=async(e)=>{
 
     const {data}=await searchInput(ata)
     console.log(data);
-  
+    setLoading(false)
     setProduct(data)
    setSearchText("")
    }else{
     const {data}=await getAdminProducts()
+    setLoading(false)
     setProduct(data)
    }
  
@@ -381,7 +430,7 @@ const handleSearchInput=async(e)=>{
   return (
     <>
     <div>
-   <MediaNavbar/>
+  
 {/* navbar starts here */}
 
 <div className='desktopnavbar' style={{margin:'10px'}}>
@@ -516,42 +565,37 @@ const handleSearchInput=async(e)=>{
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
             <a className="dropdown-item"     onClick={()=>{
               handleProduct({
-                "petCategoryy":"BIRD",
-                "typeCatagoryy":"FOOD"
+                "petCategoryy":"BIRD"
               })
             }}>BIRD </a>
               <a className="dropdown-item"   onClick={()=>{
               handleProduct({
-                "petCategoryy":"TURTLE",
-                "typeCatagoryy":"FOOD"
+                "petCategoryy":"TURTLE"
               })
             }} >TURTLE</a>
               <a className="dropdown-item"   onClick={()=>{
               handleProduct({
-                "petCategoryy":"FISH",
-                "typeCatagoryy":"FOOD"
+                "petCategoryy":"FISH"
+               
               })
             }} >FISH </a>
               
               <a className="dropdown-item" 
                 onClick={()=>{
                   handleProduct({
-                    "petCategoryy":"GUINEA PIG",
-                    "typeCatagoryy":"FOOD"
+                    "petCategoryy":"GUINEA PIG"
                   })
                 }}
               >GUINEA PIG</a>
               <a className="dropdown-item"   onClick={()=>{
               handleProduct({
-                "petCategoryy":"HAMSTER",
-                "typeCatagoryy":"FOOD"
+                "petCategoryy":"HAMSTER"
               })
             }} >HAMSTER</a>
               <a className="dropdown-item" 
                 onClick={()=>{
                   handleProduct({
-                    "petCategoryy":"RABBIT",
-                    "typeCatagoryy":"FOOD"
+                    "petCategoryy":"RABBIT"
                   })
                 }}
               >RABBIT </a>
@@ -585,7 +629,7 @@ const handleSearchInput=async(e)=>{
         <form id='serachbar' className="form-inline my-2 my-lg-0" onSubmit={handleSearchInput}>
          <div > <input value={searchText } onChange={handleChange} style={{width:'240px',padding:'20px',backgroundColor:'white',fontSize:'15px'}} className="form-control mr-sm-2" type="text" placeholder="Search your query here" name='searchText' aria-label="Search" /><span>
           
-          <button type="submit" style={{backgroundColor:'transparent',borderColor:'transparent'}}><i class="fa fa-search" aria-hidden="true"></i></button></span>
+          <button type="submit" style={{backgroundColor:'transparent',borderColor:'transparent',marginLeft:"-1rem"}}><i class="fa fa-search" aria-hidden="true"></i></button></span>
 </div>
         </form>
         <ul  className='liskmin'>
@@ -627,6 +671,362 @@ const handleSearchInput=async(e)=>{
     </nav>
   </div>
 {/* navbar ends here */}
+
+{/* medianavbar starts */}
+<div className='MediaNavbar'>
+  <div style={{display:'flex',justifyContent:'space-between',width:'100%',padding:'10px 5px 5px 5px'}}>
+    <div style={{justifyContent:'left'}}>
+
+    <>
+   <img onClick={()=>{
+    navigate("/")
+   }} src={posslogogif } style={{borderRadius:"30px"}} className='logo' alt="" />
+    </>
+    </div>
+    <div align='center' style={{justifyContent:'center'}}>
+    <form  className='search-container' onSubmit={handleSearchInput} >
+     
+      
+     <div> <input  name='searchText'  type="text"  style={{width:'80%'}} placeholder="Search.." value={searchText } onChange={handleChange}  />  
+      <span> <button type="submit" style={{marginLeft:"5px",backgroundColor:'transparent',borderColor:'transparent',marginLeft:"-1rem"}}><i class="fa fa-search" aria-hidden="true"></i></button>
+</span>
+</div>
+    </form>
+    </div>
+    <div style={{justifyContent:'right'}}>
+    <button className='mobile-menu-icon' 
+  onClick={()=>setIsMobile(!isMobile)}
+  >
+    {
+      isMobile ? (
+        <i className='fas fa-times'></i>
+      ):(
+        <i className='fas fa-bars'></i>
+      )
+    }
+  </button>
+  <li className={isMobile?'nav-links-mobile':'nav-links'}  onClick={()=> setIsMobile(false)}>
+        
+       <ul  style={{display:'flex',textDecoration:'none',padding:'10px'}}>
+        <li style={{listStyle:'none'}}><Link to="/login" className='home'><img src={shopingcart} style={{width:"20px"}} alt="" />
+          </Link>
+        </li>
+   
+        <li style={{ listStyle:'none'}}><Link to="/login" className='home'><i className="fa fa-heart"></i>
+          </Link>
+          </li>
+    
+       </ul>
+        <li style={{margin:'0'}}>
+        <button
+    className="dropdown-toggle"
+    type="button"
+    id="menu1"
+    data-toggle="dropdown"
+  >
+         Dogs
+    <span className="caret" />
+  </button>
+  <ul className="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation" id='listmo' >
+      <a role="menuitem" tabIndex={-1}  onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"DOG",
+                  "typeCatagoryy":"FOOD"
+                })
+              }} >
+      Food
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+       onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"TREAT"
+        })
+      }} >
+      Treats
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+       onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"TOY"
+        })
+      }} >
+      Toys
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+      
+      onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"APPARELS"
+        })
+      }} >
+      Apparels
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+       onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"ACCESSORIES"
+        })
+      }} >
+      Accessories
+      </a>
+    </li>
+    
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+       onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"MAT"
+        })
+      }} >
+      Bed And Mats 
+      </a>
+    </li>
+   
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+       onClick={()=>{
+        handleProduct({
+          "petCategoryy":"DOG",
+          "typeCatagoryy":"HEALTH & HYGIENE"
+        })
+      }} >
+      Health and Hygiene 
+      </a>
+    </li>
+
+
+ 
+  </ul>
+</li>
+        
+<li>
+        <button
+    className="dropdown-toggle"
+    type="button"
+    id="menu1"
+    data-toggle="dropdown"
+  >
+         Cats
+    <span className="caret" />
+  </button>
+  <ul className="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1}  onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"FOOD"
+                })
+              }} >
+      Food
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"TREAT"
+                })
+              }}>
+      Treats
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} 
+      onClick={()=>{
+        handleProduct({
+          "petCategoryy":"CAT",
+          "typeCatagoryy":"TOY"
+        })
+      }}>
+      Toys
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"APPARELS"
+                })
+              }}>
+      Apparels
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"ACCESSORIES"
+                })
+              }}>
+      Accessories
+      </a>
+    </li>
+   
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"MAT"
+                })
+              }}>
+      Bed And Mats 
+      </a>
+    </li>
+   
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"CAT",
+                  "typeCatagoryy":"HEALTH & HYGIENE"
+                })
+              }}>
+      Health and Hygiene 
+      </a>
+    </li>
+
+
+ 
+  </ul>
+</li>
+
+<li>
+        <button
+    className="dropdown-toggle"
+    type="button"
+    id="menu1"
+    data-toggle="dropdown"
+    style={{margin:'0px 0px 0px 0px',textAlign:'center'}}
+
+  >
+         Other
+         Animals
+    <span className="caret" />
+  </button>
+  <ul className="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation" id='listmo' >
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"RABBIT",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      RABBIT      
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"HAMSTER",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      HAMSTER
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1}onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"GUINEA PIG",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      GUINEA PIG
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"BIRD",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      BIRD
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"TURTLE",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      TURTLE
+      </a>
+    </li>
+    <li role="presentation" id='listmo'>
+      <a role="menuitem" tabIndex={-1} onClick={()=>{
+                handleProduct({
+                  "petCategoryy":"FISH",
+                  "typeCatagoryy":"FOOD"
+                })
+              }}>
+      FISH
+      </a>
+    </li>
+   
+   
+   
+
+
+ 
+  </ul>
+</li>
+     
+        <li style={{ margin: '20px 10px'}}><Link to="/" className='home'>Contact
+          </Link></li>
+       
+         
+        <li style={{ margin: '20px 10px'}}>
+        <Link to="/" className='home'>About </Link>
+        </li>
+       {userInfo ?<>
+        <li style={{ margin: '20px 10px'}}><Link to="/Account" className='home'>My Account
+          </Link></li>
+          
+       
+        <li onClick={()=>{
+              localStorage.removeItem("userInfo")
+              localStorage.removeItem("userId")
+              navigate("/")
+            }} style={{ margin: '20px 10px'}}><Link to="/signin" className='home'>Logout
+          </Link></li></> :
+       <>
+        <li style={{ margin: '20px 10px'}}><Link to="/signin" className='home'>SignUp
+          </Link></li>
+          <li style={{ margin: '20px 10px'}}><Link to="/login" className='home'>Login
+          </Link></li>
+
+         </>
+       }
+          
+         
+  </li>
+    </div>
+  </div>
+
+ 
+
+
+  
+
+   
+
+    </div>
+{/* media nav bar ends */}
   <div className='container-fluid' style={{display:"flex"}}>
 
   <div className='flexco' style={{justifyContent:"space-between"}} >
@@ -760,7 +1160,7 @@ const handleSearchInput=async(e)=>{
         </li>
         <li>
           <a onClick={()=>{
-            //handlepetCategory("FISH")
+          handlePet("FISH")
           }}>Fish</a>
         </li>
         <li>
@@ -1023,50 +1423,78 @@ const handleSearchInput=async(e)=>{
   </div>
 
   </div>
-  
+
   <div className='container-fluid'>
+
 
         <div align='center'  id='rowlock' className='row'>
     
             <div>
           <div className='container' id='productcontainer' >
-          <div align='center' id='procardlw'  className="row g-0">
+         <div >
+         {loading===false && products.length===0?<img 
+ style={{
+  width:"12rem",
+  marginLeft:"-10px"
+ }}
+ src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba874382-2aa0-40bc-8b77-742fd1ea245e/d49w8t2-3f2077a0-fe23-45f9-a0dc-33de8bd62eff.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhODc0MzgyLTJhYTAtNDBiYy04Yjc3LTc0MmZkMWVhMjQ1ZVwvZDQ5dzh0Mi0zZjIwNzdhMC1mZTIzLTQ1ZjktYTBkYy0zM2RlOGJkNjJlZmYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XFWX-tFjLqeO8gk6cBHHIjMJWvQLb81jzfqD7zIIk7I"
+  alt="" />:""}
+         <div  style={{width:"4rem"}} >
+
+ <Circles
+  height="80"
+ 
+  width="80"
+  color="#1BB5C0"
+  ariaLabel="circles-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={loading}
+/>
+
+          
+          </div>
+         </div>
+          {loading?<></>:<div align='center' id='procardlw'  className="row g-0">
     
-            {products &&
-            products.length > 0 &&
-            products.map((ele) => (
-              
-                <div  className='col-sm-4'  id='kil'   >
-                <div  id="Productcard30" className='card' >
+    {products &&
+    products.length > 0 &&
+    products.map((ele) => (
+      
+        <div  className='col-sm-4'  id='kil'   >
+
+        <div  id="Productcard30" className='card' >
+    
+            <div className='Productimg' style={{borderRadius:'20px'}} align="center"   >
+              <img onClick={()=>{
+              navigate(`/ProductPurchase/${ele._id}`)
+            }}
+            src={src(ele.uploadImages)} alt=""  /></div>
             
-                    <div className='Productimg' style={{borderRadius:'20px'}} align="center"  onClick={()=>{
-                      navigate(`/ProductPurchase/${ele._id}`)
-                    }} ><img src={src(ele.uploadImages)} alt=""  /></div>
-                    
-                    <div  style={{paddingTop:'4px'}} align="center" >
-                    <p className='brand'>{ele.brandCategory}</p>
-                       <b><p style={{fontSize:'12px'}} >{ele.name.slice(0,30)+'....'}</p></b> 
-                        <h6 style={{paddingTop:'2px',fontSize:'15px'}}><s>₹ {ele.maxPrice} </s>  - <b>  ₹{ele.price}</b> </h6>
-                    </div>
-                    <div style={{paddingTop:'5px',borderRadius:'20px'}} align="center">
-                    <button   className='button30' onClick={()=>{
-                                wishlist(ele)
-                    }} ><img style={{backgroundColor:'#FFFFFF',margin:'5px',}} src={ele.uploadImages} alt="" /><span style={{backgroundColor:'#FFFFFF'}}>ADD TO CART</span></button></div>
-                    <div style={{borderRadius:'20px',paddingTop:'5px',paddingBottom:'5px'}} align="center">
-                    <button   className='button30' style={{backgroundColor:'#F2C879',color:'black'}} onClick={()=>{
-                      navigate(`/InstantPurchase/${ele._id}/1`)
-                    }}><span >
-                  <img style={{width:'20px',height:'20px'}} src={print}/>
-                    
-                    </span> BUY NOW</button></div>
-                    </div>
-
-                    
-                </div>
-               ))}
-
-               
+            <div  style={{paddingTop:'4px'}} align="center" >
+            <p className='brand'>{ele.brandCategory}</p>
+               <b><p style={{fontSize:'12px'}} >{ele.name.slice(0,30)+'....'}</p></b> 
+                <h6 style={{paddingTop:'2px',fontSize:'15px'}}><s>₹ {ele.maxPrice} </s>  - <b>  ₹{ele.price}</b> </h6>
             </div>
+            <div style={{paddingTop:'5px',borderRadius:'20px'}} align="center">
+            <button   className='button30' onClick={()=>{
+                        wishlist(ele)
+            }} ><img style={{backgroundColor:'#FFFFFF',margin:'5px',}} src={ele.uploadImages} alt="" /><span style={{backgroundColor:'#FFFFFF'}}>ADD TO CART</span></button></div>
+            <div style={{borderRadius:'20px',paddingTop:'5px',paddingBottom:'5px'}} align="center">
+            <button   className='button30' style={{backgroundColor:'#F2C879',color:'black'}} onClick={()=>{
+              navigate(`/InstantPurchase/${ele._id}/1`)
+            }}><span >
+          <img style={{width:'20px',height:'20px'}} src={print}/>
+            
+            </span> BUY NOW</button></div>
+            </div>
+
+            
+        </div>
+       ))}
+
+       
+    </div>}
           </div>
         </div>
 

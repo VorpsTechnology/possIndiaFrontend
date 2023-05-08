@@ -11,7 +11,11 @@ function MediaNavbar() {
 const  [isMobile,setIsMobile] = useState(false);
 const navigate = useNavigate();
 const userInfo=localStorage.getItem("userInfo")
+const handleSearch=()=>{
+ 
+    navigate("/ProductPage/DOG/FOOD")
 
+}
 function handleProduct(data){
  
  console.log(data);
@@ -33,11 +37,16 @@ function handleProduct(data){
     </>
     </div>
     <div align='center' style={{justifyContent:'center'}}>
-    <form  className='search-container' >
+    <form  className='search-container'  >
      
       
-      <p> <input  type="text"  style={{width:'80%'}} placeholder="Search.." name="search" />  </p>
-      
+     <div> <input 
+             onClick={()=>{handleSearch()}}
+            
+            type="text"  style={{width:'80%'}} placeholder="Search.." name="search" />  
+      <span> <button type="submit" style={{marginLeft:"5px",backgroundColor:'transparent',borderColor:'transparent',marginLeft:"-1rem"}}><i class="fa fa-search" aria-hidden="true"></i></button>
+</span>
+</div>
     </form>
     </div>
     <div style={{justifyContent:'right'}}>
