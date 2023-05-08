@@ -1432,8 +1432,15 @@ const handleSearchInput=async(e)=>{
             <div>
           <div className='container' id='productcontainer' >
          <div >
+         {loading===false && products.length===0?<img 
+ style={{
+  width:"12rem",
+  marginLeft:"-10px"
+ }}
+ src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba874382-2aa0-40bc-8b77-742fd1ea245e/d49w8t2-3f2077a0-fe23-45f9-a0dc-33de8bd62eff.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhODc0MzgyLTJhYTAtNDBiYy04Yjc3LTc0MmZkMWVhMjQ1ZVwvZDQ5dzh0Mi0zZjIwNzdhMC1mZTIzLTQ1ZjktYTBkYy0zM2RlOGJkNjJlZmYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XFWX-tFjLqeO8gk6cBHHIjMJWvQLb81jzfqD7zIIk7I"
+  alt="" />:""}
          <div  style={{width:"4rem"}} >
- 
+
  <Circles
   height="80"
  
