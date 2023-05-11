@@ -5,3 +5,4 @@ import axios from "axios";
 export const createBlog=(data)=>API.post("/blog/add",data)
 export const getBlogs=()=>API.get("/blog/get")
 export const getBlog=(data)=>API.get(`/blog/getone/${data}`)
+export const getServer=(data)=>API.get("/get")
